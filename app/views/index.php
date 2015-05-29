@@ -29,7 +29,7 @@
                 <ul class="nav nav-pills navbar-right nav-end">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Blog</i></a></li>
+                    <li><a href="#">Tutorials</i></a></li>
                 </ul>
              </div>
           </div>
