@@ -1,8 +1,11 @@
 html, body {
     width: 100%;
     height: 100%;
-    font-family: sans-serif;
-   /*background-image: url("../style/bg.jpg");*/
+    font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+li {
+    list-style-type: none;
 }
 
 header {
@@ -22,7 +25,6 @@ header a:hover {
 }
 
 
-
 /* Navbar */
 .nav>li>a:hover {
     background: none;
@@ -40,6 +42,7 @@ header a:hover {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background: #333;
 }
 
 .nav, .navbar-nav, .navbar >.container .navbar-brand, .navbar >.container-fluid .navbar-brand {
@@ -48,18 +51,59 @@ header a:hover {
 
 .nav>li>a {
     display: inline-block;
-    padding: 15px 15px;
-    margin: 0 30px 0px 0;
+    padding: 16px 15px;
 }
 
 .navbar-default {
     border-color: #444; 
 }
 
-/* Nav sm links */
-.facebook, .linkedin, .github , .email{
+.nav {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.nav:hover {
+    color: #50b3eb;
+    cursor: pointer;
+    -webkit-transition: color 2s ease-out;
+    -moz-transition: color 2s ease-out;
+    -o-transition: color 2s ease-out;
+    transition: color 2s ease-out;
+}
+
+#logo {
+    margin-top: -4px;
+    height: 25px;
+}
+
+.container {
+    width: 100%;
+}
+
+/** Body **/
+
+/** Footer **/
+
+#footer-wrap {
+    background-color: #333;
     position: absolute;
-    color: #38B0DE;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-social-media {
+    margin-top: 10px;
+    padding-left: 15px;
+}
+.footer-social-media li {
+    display:inline-block;
+    margin-right: 30px;
+}
+
+.facebook, .linkedin, .github , .email{
+    color: #7e7e7e;
     font-size: 30px;
     -webkit-transition: color 2s ease-out;
     -moz-transition: color 2s ease-out;
@@ -68,48 +112,14 @@ header a:hover {
 }
 
 .facebook:hover, .linkedin:hover, .github:hover, .email:hover{
-  /*color: #87CEFA;*/
-    font-size: 35px;
-    color: #ff6666;
+    color: #50b3eb;
     cursor: pointer;
 }
 
-.container {
-    width: 100%;
-}
 
-
-
-/** Body **/
-#header-wrap {
-    background-color: #444;
-    height: 85vh;
-}
-
-#myWork {
-    height: 85vh;
-}
-
-#myOtherWork {
-    height: 55vh;
-    background-color: #dce1e1;
-}
-
-#contact {
-    height: 55vh;
-}
-
-#footer-wrap {
-    height: 35vh;
-    background-color: #333; 
-}
-
-#footer-content {
-    height:30vh;
-    background-color: #191b1f;
-}
-
-#footer {
-    height: 5vh;
-    background-color: black;
+.footer-copyright {
+    color: #7e7e7e;
+    float: right;
+    padding-right: 15px;
+    line-height: 50px;
 }
