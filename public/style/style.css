@@ -123,3 +123,7 @@ header a:hover {
     padding-right: 15px;
     line-height: 50px;
 }
+
+.nav-footer {
+    margin-left: -25px;
+}
