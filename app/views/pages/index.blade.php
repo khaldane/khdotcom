@@ -14,7 +14,7 @@
                 Want to go on a hunt? Learn more about me by finding the 5 easter eggs hidden within my site!
             </p>
             <div class="download-resume">
-                <p> <img class="download-img" src="images/download.png"/> DOWNLOAD RESUME</p>
+                <p> <img class="download-img" src="images/assets/download.png"/> DOWNLOAD RESUME</p>
             </div>
         </div>
     </div>
@@ -30,7 +30,7 @@
                     <div class= "featured-text-body">
                         <h3 class="featured-title">Goodlife Fitness</h3>
                         <p class="about">Android front &amp; back end development</p>
-                        <p class="redirect"> LEARN MORE <img class="learn-more-img" src="images/arrow.png"/> </p>
+                        <p class="redirect"> LEARN MORE <img class="learn-more-img" src="images/assets/arrow.png"/> </p>
                     </div>
                 </div>
             </div>

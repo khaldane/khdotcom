@@ -1,10 +1,13 @@
-<?php
+<?php 
+
+use models\Portfolio;
 
 class PortfolioController extends BaseController {
     
 	public function index()
 	{
-		return View::make('pages.portfolio');
+        $caseStudies = Portfolio::getCaseStudies();
+		return View::make('pages.portfolio', array('caseStudies' => $caseStudies));
 	}
 
 }
