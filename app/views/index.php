@@ -57,7 +57,17 @@
             <div class="featured-product">
                 <div class="featured-overlay"></div>
                 <div class="featured-content">
-                    blah
+                    <div class="featured-title-overlay"></div>
+                    <div class="featured-body"> 
+                        <div>
+                            <img class="featured-mobile" src="/images/playOnNexus.png" alt="Featured Nexus"/>
+                        </div>
+                        <div class= "featured-text-body">
+                            <h3 class="featured-title">PLAY ON!</h3>
+                            <p class="about">Android front &amp; back end development</p>
+                            <p class="redirect"> LEARN MORE <img class="learn-more-img" src="images/arrow.png"/> </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
