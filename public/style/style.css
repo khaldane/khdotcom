@@ -1,11 +1,20 @@
 html, body {
     width: 100%;
     height: 100%;
-    font-family: 'Open Sans', helvetica, sans-serif;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Lato, 'Open Sans', helvetica, sans-serif;
 }
 
 li {
     list-style-type: none;
+}
+
+h2 {
+    font-family: lato black, 'Open Sans', helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 header {
@@ -33,20 +42,14 @@ header a:hover {
 .navbar-nav > li > a:hover {
     background: none;
 }
+
 .navbar {
     border: none;
     margin: 0;
 }
 
-.navbar, .navbar-static-top, .bs-docs-nav {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.navbar {
     background: #333;
-}
-
-.nav, .navbar-nav, .navbar >.container .navbar-brand, .navbar >.container-fluid .navbar-brand {
-
 }
 
 .nav>li>a {
@@ -66,10 +69,10 @@ header a:hover {
 .nav:hover {
     color: #50b3eb;
     cursor: pointer;
-    -webkit-transition: color 2s ease-out;
-    -moz-transition: color 2s ease-out;
-    -o-transition: color 2s ease-out;
-    transition: color 2s ease-out;
+    -webkit-transition: color 1s ease-out;
+    -moz-transition: color 1s ease-out;
+    -o-transition: color 1s ease-out;
+    transition: color 1s ease-out;
 }
 
 #logo {
@@ -77,17 +80,107 @@ header a:hover {
     height: 25px;
 }
 
-.container {
+/** Body **/
+
+#content {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.content-left {
+    background: #50b3eb;
+    top: 50px;
+    bottom: 50px;
+    width: 400px;
+    padding: 80px 30px;
+    position: absolute;
+    border-right: thick double #333;
+    border-style: solid;
+}
+
+.content-right {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    padding-left: 400px;
     width: 100%;
 }
 
-/** Body **/
+.about-wrap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+}
+
+.about-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+.about {
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Lato, 'Open Sans', helvetica, sans-serif;
+    font-weight: 100;
+}
+
+
+.download-resume {
+    color: rgba(255,255,255,.5);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Lato, 'Open Sans', helvetica, sans-serif;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.download-img {
+    opacity: 0.5;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/** Featured Product **/
+
+.featured-product {
+    background: url(../images/playOn.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.featured-content {
+    width:100%;
+    height:100%;
+    position: absolute;
+    padding: 20px;
+    z-index: 10;
+    color: #fff;
+}
+
+.featured-overlay {
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-color:rgba(9, 9, 9, 0.5);
+}
 
 /** Footer **/
 
 #footer-wrap {
     background-color: #333;
-    position: absolute;
+    position: fixed;
+    height: 50px;
     right: 0;
     bottom: 0;
     left: 0;
