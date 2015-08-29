@@ -60,10 +60,10 @@
                     <div class="featured-title-overlay"></div>
                     <div class="featured-body"> 
                         <div>
-                            <img class="featured-mobile" src="/images/playOnNexus.png" alt="Featured Nexus"/>
+                            <img class="featured-mobile" src="/images/goodlifeFitnessNexus.png" alt="Featured Nexus"/>
                         </div>
                         <div class= "featured-text-body">
-                            <h3 class="featured-title">PLAY ON!</h3>
+                            <h3 class="featured-title">Goodlife Fitness</h3>
                             <p class="about">Android front &amp; back end development</p>
                             <p class="redirect"> LEARN MORE <img class="learn-more-img" src="images/arrow.png"/> </p>
                         </div>

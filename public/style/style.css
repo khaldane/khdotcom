@@ -157,7 +157,7 @@ header a:hover {
 /** Featured Product **/
 
 .featured-product {
-    background: url(../images/playOn.png);
+    background: url(../images/goodlifeFitness.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -208,7 +208,7 @@ header a:hover {
 
 .featured-mobile {
     height: 462px;
-    margin-left: 60px;
+    margin-left: 40px;
     position: fixed;
     bottom: -60px;
 }
