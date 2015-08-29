@@ -65,7 +65,7 @@ return array(
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
-			'host'     => 'localhost',
+			'host'     => getenv('DB_HOST'),
 			'database' => 'forge',
 			'username' => 'forge',
 			'password' => '',
@@ -76,7 +76,7 @@ return array(
 
 		'sqlsrv' => array(
 			'driver'   => 'sqlsrv',
-			'host'     => 'localhost',
+			'host'     => getenv('DB_HOST'),
 			'database' => 'database',
 			'username' => 'root',
 			'password' => '',
