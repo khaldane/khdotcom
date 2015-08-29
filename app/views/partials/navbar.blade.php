@@ -2,13 +2,13 @@
     <nav class="navbar navbar-default">
      <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#"> <img id="logo" src="/images/khlogo.png" alt="Katherine Haldane Logo" /> </a>
+            <a class="navbar-brand" href="/"> <img id="logo" src="/images/khlogo.png" alt="Katherine Haldane Logo" /> </a>
         </div>
         <ul class="nav nav-pills navbar-left nav-start">
-            <li><a href="#" class="nav">PORTFOLIO</a></li>
-            <li><a href="#" class="nav">GAMING</a></li>
-            <li><a href="#" class="nav">TUTORIALS</i></a></li>
-            <li><a href="#" class="nav">CONTACT</i></a></li>
+            <li class="nav">{{ link_to_route('portfolio', 'PORTFOLIO') }}</li>
+            <li class="nav">{{ link_to_route('gaming', 'GAMING') }}</li>
+            <li class="nav">{{ link_to_route('tutorials', 'TUTORIALS') }}</li>
+            <li class="nav">{{ link_to_route('contact', 'CONTACT') }}</li>
         </ul>
      </div>
     </nav>

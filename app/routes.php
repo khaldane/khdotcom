@@ -15,3 +15,28 @@ Route::get('/', function()
 {
 	return View::make('pages.index');
 });
+
+/* 
+ * Navbar
+ */
+Route::get('/portfolio', [
+	'as'     => 'portfolio',
+	'uses'   => 'PortfolioController@index'
+]);
+
+Route::get('/gaming', [
+	'as'     => 'gaming',
+	'uses'   => 'GamingController@index'
+]);
+
+
+Route::get('/tutorials', [
+	'as'     => 'tutorials',
+	'uses'   => 'TutorialController@index'
+]);
+
+
+Route::get('/contact', [
+	'as'     => 'contact',
+	'uses'   => 'ContactController@index'
+]);
