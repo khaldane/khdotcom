@@ -40,3 +40,8 @@ Route::get('/contact', [
 	'as'     => 'contact',
 	'uses'   => 'ContactController@index'
 ]);
+
+Route::get('/details', [
+	'as'     => 'portfolio-details',
+	'uses'   => 'PortfolioController@details'
+]);

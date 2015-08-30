@@ -30,7 +30,7 @@
                     <div class= "featured-text-body">
                         <h3 class="featured-title">Goodlife Fitness</h3>
                         <p class="about">Android front &amp; back end development</p>
-                        <p class="redirect"> LEARN MORE <img class="learn-more-img" src="images/assets/arrow.png"/> </p>
+                        <p> <a class="redirect" href="/details?id=goodlife"> LEARN MORE </a> <img class="learn-more-img" src="images/assets/arrow.png"/> </p>
                     </div>
                 </div>
             </div>

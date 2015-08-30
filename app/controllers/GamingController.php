@@ -4,7 +4,7 @@ class GamingController extends BaseController {
     
 	public function index()
 	{
-		return View::make('pages.portfolio');
+		return View::make('pages.gaming.gaming');
 	}
 
 }

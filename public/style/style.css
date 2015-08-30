@@ -21,6 +21,26 @@ h2 {
     font-family: Lato, 'Open Sans', helvetica, sans-serif;
     color: #ffffff;
     font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-family: Lato, 'Open Sans', helvetica, sans-serif;
+    color: #ffffff;
+    text-align: left;
+}
+
+h1 {
+    font-family: Lato, 'Open Sans', helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: bold;   
+    text-align: center;
+}
+
+h4 {
+    color: #50b3eb;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .redirect {
@@ -99,7 +119,6 @@ header a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    overflow-y: scroll;
     background-color: #f0f5f8;
 }
 
@@ -204,7 +223,7 @@ header a:hover {
 }
 
 .featured-body {
-    color: #FFFFFF;
+    color: #ffffff;
     bottom: 0;
     position: absolute;
     z-index: 11;
@@ -221,6 +240,11 @@ header a:hover {
     position: fixed;
     bottom: 64px;
     margin-left: 350px;
+}
+
+.featured-text-body a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .learn-more-img {
@@ -282,6 +306,7 @@ header a:hover {
     bottom: 0;
     height: 100%;
     width: 100%;
+    overflow-y: scroll;
 }
 
 .portfolio-header {
@@ -332,6 +357,11 @@ header a:hover {
     padding: 12px;
 }
 
+.case-study-body a { 
+    color: #191919;
+    text-decoration: none;
+}
+
 .case-study-title {
     text-align: center;
     padding-top: 120px;
@@ -343,4 +373,75 @@ header a:hover {
     right: 0;
     margin-right:20px;
     margin-top: -30px;
+}
+
+/** Details **/
+
+#details-wrap {
+    overflow-y: scroll;
+     background: url(../images/goodlifeFitness.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;   
+}
+
+.details-header {
+    height: 100%;
+    width: 100%;
+    background: rgba(5,9,1,0);
+    background: -moz-linear-gradient(top, rgba(5,9,1,0) 0%, rgba(0,0,0,0.99) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(5,9,1,0)), color-stop(100%, rgba(0,0,0,0.99)));
+    background: -webkit-linear-gradient(top, rgba(5,9,1,0) 0%, rgba(0,0,0,0.99) 100%);
+    background: -o-linear-gradient(top, rgba(5,9,1,0) 0%, rgba(0,0,0,0.99) 100%);
+    background: -ms-linear-gradient(top, rgba(5,9,1,0) 0%, rgba(0,0,0,0.99) 100%);
+    background: linear-gradient(to bottom, rgba(5,9,1,0) 0%, rgba(0,0,0,0.99) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#050901', endColorstr='#000000', GradientType=0 );
+}
+
+.details-nav {
+    height: 180px;
+    width: 100%;
+    background-color: #191919;
+    border-top: 2px solid #f0f5f8;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+
+.details-website {
+    height: 100%;
+    background: #50b3eb;
+}
+
+.details-icon-type {
+    margin-top: -40px;
+    height: 70px;   
+}
+
+.detail-nav-header {
+    margin-left: 10px;
+    padding: 5px;   
+}
+
+/** Contact **/
+#contact-wrap {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+.contact-info {
+    color: #ffffff;   
+}
+
+.contact-body {
+    margin-top: 30px;
 }
