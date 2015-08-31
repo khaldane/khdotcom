@@ -345,16 +345,16 @@ header a:hover {
     background: rgba(9, 9, 9, 0.5);
 }
 
-.col-sm-4 {
-    padding: 5px;
-}
-
 .case-study-body {
     background: #ffffff;
     height: 80px;
     width: 100%;
     color: #333;
     padding: 12px;
+}
+
+.col-sm-4 {
+    padding: 5px;
 }
 
 .case-study-body a { 
@@ -379,7 +379,7 @@ header a:hover {
 
 #details-wrap {
     overflow-y: scroll;
-     background: url(../images/goodlifeFitness.jpg);
+    background: url(../images/goodlifeFitness.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -403,7 +403,7 @@ header a:hover {
 }
 
 .details-nav {
-    height: 180px;
+    height: 150px;
     width: 100%;
     background-color: #191919;
     border-top: 2px solid #f0f5f8;
@@ -427,6 +427,48 @@ header a:hover {
     padding: 5px;   
 }
 
+.details-body {
+    height: 100%;
+    width: 100%;
+    background-color: #f0f5f8;
+    padding-top: 20px;
+}
+
+.details-content {
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.details-features {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.details-content-img {
+    height: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: url(../images/goodlifeFitness.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.details-title {
+    font-family: Bebas Neue, 'Open Sans', helvetica, sans-serif;
+    color: #333;
+    letter-spacing: 1px;
+    src: url("../fonts/BebasNeue/BebasNeue.otf") format("opentype");
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    letter-spacing: 2px;
+}
+
 /** Contact **/
 #contact-wrap {
     height: 100%;
@@ -435,7 +477,6 @@ header a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    
 }
 
 .contact-info {
