@@ -45,3 +45,13 @@ Route::get('/details', [
 	'as'     => 'portfolio-details',
 	'uses'   => 'PortfolioController@details'
 ]);
+
+Route::get('/login', [
+	'as'     => 'login',
+	'uses'   => 'AdminController@index'
+]);
+
+Route::post('/authenticate', [
+	'as'     => 'authenticate',
+	'uses'   => 'AdminController@authenticate'
+]);

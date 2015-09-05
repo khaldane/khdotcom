@@ -11,4 +11,8 @@ class Portfolio extends Eloquent  {
         return DB::table('portfolio')->orderBy('id','desc')->get();
     }
     
+    public static function getCaseStudy($id) {
+        return DB::table('portfolio')->where('tag', $id)->get();
+    }
+    
 }

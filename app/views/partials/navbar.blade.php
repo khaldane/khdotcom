@@ -10,6 +10,7 @@
             <li class="nav">{{ link_to_route('tutorials', 'TUTORIALS') }}</li>
             <li class="nav">{{ link_to_route('contact', 'CONTACT') }}</li>
         </ul>
+            <li class="nav nav-right"><a href="/login"><i class="fa fa-sign-in"></i></a></li>
      </div>
     </nav>
 </div>

@@ -11,6 +11,19 @@ class PortfolioController extends BaseController {
 	}
     
     public function details() {
-        return View::make('pages.portfolio.details');
+        //Check if url contains a valid id
+        if($_GET) {
+            //Get the id
+            $id = $_GET["id"];
+
+            $caseStudy = Portfolio::getCaseStudy($id);
+            if(sizeof($caseStudy) > 0) {
+                return View::make('pages.portfolio.details', array('caseStudy' => $caseStudy[0]));  
+            } else {
+                //redirect somewhere else
+            }
+        } else {
+             //redirect somewhere else
+        }       
     }
 }
