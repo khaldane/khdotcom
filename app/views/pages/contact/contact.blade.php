@@ -19,5 +19,24 @@
                 </div>
             </div>
         </div>
+        <div class="content-right">
+         <div id="world-map-gdp" style="width: 600px; height: 400px"></div>
+          <script>
+            $(function(){
+              $('#world-map-gdp').vectorMap({
+                  map: 'world_mill_en',
+                  series: {
+                    regions: [{
+                      scale: ['#C8EEFF', '#0071A4'],
+                      normalizeFunction: 'polynomial'
+                    }]
+                  },
+                  onRegionTipShow: function(e, el, code){
+                    el.html(el.html()+' (GDP - '+gdpData[code]+')');
+                  }
+                });
+            });
+          </script>
+        </div>
     </div>
 @stop

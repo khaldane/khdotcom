@@ -11,11 +11,27 @@
                     <div class="detail-nav-header">
                          <h4>Languages</h4>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="details-website">
-                        <img class="details-icon-type" src="/images/assets/webIcon.png" alt="img" />
+                    <div class="col-sm-4">
+                        <div class="about language-list"> language 1 </div>
+                        <div class="about language-list"> language 2 </div>
                     </div>
+                    <div class="col-sm-4">
+                        <div class="about language-list"> language 1 </div>
+                        <div class="about language-list"> language 2 </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="about language-list"> language 1 </div>
+                        <div class="about language-list"> language 2 </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 visit-site-callout">
+                    <a href="#" class="details-website">
+                        <img class="details-icon-type" src="/images/assets/webIcon.png" alt="img" />
+                        <div class="details-website-text">
+                            Visit Site
+                            <i class="fa fa-long-arrow-right"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -34,20 +50,20 @@
                 <div class="details-content-img"> </div>
             </div>
             <div class="details-features">
-                <h3> Features </h3>
+                <h4>Features</h4>
                 <p class="about" >Flannel cardigan health goth plaid. Wayfarers keffiyeh Pitchfork swag.</p>
                 <div class="col-sm-6">
                     <ul>
-                        <li> feature 1 </li>
-                        <li> feature 2 </li>
-                        <li> feature 3 </li>
+                        <li> <div class="about featured-list"> feature 1 </div> </li>
+                        <li> <div class="about featured-list"> feature 2 </div> </li>
+                        <li> <div class="about featured-list"> feature 3 </div> </li>
                     </ul>
                 </div>
                 <div class="col-sm-6">
                     <ul>
-                        <li> feature 1 </li>
-                        <li> feature 2 </li>
-                        <li> feature 3 </li>
+                        <li> <div class="about featured-list"> feature 1 </div> </li>
+                        <li> <div class="about featured-list"> feature 2 </div> </li>
+                        <li> <div class="about featured-list"> feature 3 </div> </li>
                     </ul>
                 </div>
             </div>

@@ -1,6 +1,5 @@
 html, body {
     width: 100%;
-    height: 100%;
     min-height: 100%;
     padding: 0;
     margin: 0;
@@ -9,7 +8,7 @@ html, body {
 }
 
 li {
-    list-style-type: none;
+    color: #50b3eb;
 }
 
 hr {
@@ -186,13 +185,13 @@ header a:hover {
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     position: relative;
 }
 
 .featured-content {
-    width:100%;
-    height:100%;
+    width: 100%;
+    min-height: 100%;
     position: absolute;
     z-index: 10;
     bottom: 0;
@@ -209,8 +208,8 @@ header a:hover {
 }
 
 .featured-overlay {
-    width:100%;
-    height:100%;
+    width: 100%;
+    min-height: 100%;
     position: absolute;
     background-color:rgba(9, 9, 9, 0.5);
 }
@@ -353,8 +352,9 @@ header a:hover {
     padding: 12px;
 }
 
-.col-sm-4 {
-    padding: 5px;
+.visit-site-callout {
+    padding: 0;
+    height: 100%;
 }
 
 .case-study-body a { 
@@ -413,13 +413,43 @@ header a:hover {
 }
 
 .details-website {
+    display: block;
     height: 100%;
+    width: 100%;
     background: #50b3eb;
+    text-align: center;
+}
+    
+.details-icon-type {
+    position: absolute;
+    margin-top: -40px;
+    height: 70px;  
+    display: block;
+    margin-left: -35px;
+    left: 50%;
 }
 
-.details-icon-type {
-    margin-top: -40px;
-    height: 70px;   
+.details-website-text {
+    padding: 60px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #333;
+    -webkit-transition: .4s all;
+    transition: .4s all;
+}
+.details-website-text .fa {
+    color: #fff;
+    margin-left: 5px;
+}
+
+.details-website:hover {
+    text-decoration: none;
+}
+
+.details-website:hover .details-website-text {
+    color: #fff;
+    -webkit-transition: .2s all;
+    transition: .2s all;
 }
 
 .detail-nav-header {
@@ -428,10 +458,11 @@ header a:hover {
 }
 
 .details-body {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     background-color: #f0f5f8;
     padding-top: 20px;
+    padding-bottom: 150px;
 }
 
 .details-content {
@@ -444,10 +475,11 @@ header a:hover {
 .details-features {
     margin-left: 20%;
     margin-right: 20%;
+    margin-top: 20px;
 }
 
 .details-content-img {
-    height: 500px;
+    height: 550px;
     margin-left: 10%;
     margin-right: 10%;
     background: url(../images/goodlifeFitness.jpg);
@@ -471,7 +503,7 @@ header a:hover {
 
 /** Contact **/
 #contact-wrap {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     top: 0;
     bottom: 0;
@@ -485,4 +517,12 @@ header a:hover {
 
 .contact-body {
     margin-top: 30px;
+}
+
+.featured-list {
+ color: #333;   
+}
+
+.language-list {
+    color: #7e7e7e;
 }
