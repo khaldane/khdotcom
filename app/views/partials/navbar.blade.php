@@ -10,7 +10,11 @@
             <li class="nav">{{ link_to_route('tutorials', 'TUTORIALS') }}</li>
             <li class="nav">{{ link_to_route('contact', 'CONTACT') }}</li>
         </ul>
-            <li class="nav nav-right"><a href="/login"><i class="fa fa-sign-in"></i></a></li>
+         @if(Auth::user())
+            <li class="nav nav-right"><a href="/logout"><i class="fa fa-sign-out"></i></a></li>
+         @else
+             <li class="nav nav-right"><a href="/login"><i class="fa fa-sign-in"></i></a></li>
+         @endif
      </div>
     </nav>
 </div>

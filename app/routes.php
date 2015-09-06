@@ -46,12 +46,28 @@ Route::get('/details', [
 	'uses'   => 'PortfolioController@details'
 ]);
 
+/* Authentication */
+
 Route::get('/login', [
 	'as'     => 'login',
-	'uses'   => 'AdminController@index'
+	'uses'   => 'UserController@index'
 ]);
+
+Route::get('/logout', [
+	'as'     => 'login',
+	'uses'   => 'UserController@logout'
+]);
+
 
 Route::post('/authenticate', [
 	'as'     => 'authenticate',
-	'uses'   => 'AdminController@authenticate'
+	'uses'   => 'UserController@authenticate'
+]);
+
+
+/* Admin */
+
+Route::get('/admin', [
+	'as'     => 'admin-panel',
+	'uses'   => 'AdminController@index'
 ]);
