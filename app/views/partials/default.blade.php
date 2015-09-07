@@ -9,6 +9,7 @@
      <main id="content">
         @yield('content')
     </main>
+    @include('partials.footer_meta')
 	@include('partials.footer')
 </body>
 </html>

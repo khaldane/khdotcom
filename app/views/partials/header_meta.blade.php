@@ -15,13 +15,10 @@
 <!-- ckeditor -->
 <script src="//cdn.ckeditor.com/4.5.3/standard/ckeditor.js"></script>
 
-<!-- JVector Maps-->
- <link rel="stylesheet" href="styles/jvectormap/jquery-jvectormap-2.0.4.css" type="text/css" media="screen"/> 
-
 <!-- Angular js-->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 
-<!--- Bootstrap/Font Awesome/Style-->
+<!--- Bootstrap | FontAwesome | Style -->
 <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="components-font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="style/style.css">
@@ -30,3 +27,4 @@
 <script src="style/bootstrap/js/bootstrap.min.js"></script>
 <script src="javascript/jquery-jvectormap-2.0.4.min.js"></script>
 <script src="javascript/app.js"></script>
+<script src="javascript/jvector.js"></script>

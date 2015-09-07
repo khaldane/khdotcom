@@ -11,7 +11,7 @@
                 <hr class="hr-small">
             </div>
         </div>
-         <div class="admin-portfolio col-sm-6" >
+         <div class="admin-content col-sm-6" >
             <h1 class="admin-medium">Portfolio <a class="admin-right" href="/new-portfolio"><i class="fa fa-plus"></i></a></h1>
             <hr class="hr-large">
              
@@ -29,7 +29,7 @@
              
         </div>
         
-        <div class="admin-tutorials">
+        <div class="admin-content">
             <h1 class="admin-medium">Tutorials <a class="admin-right" href="/new-tutorial"><i class="fa fa-plus"></i></a></h1>
             <hr  class="hr-large">
              <div class="admin-case-study">

@@ -1,5 +1,7 @@
 <?php
 
+use models\Admin;
+
 class UserController extends BaseController {
     
 	public function index() {
@@ -15,9 +17,9 @@ class UserController extends BaseController {
 
     public function authenticate() {
        if((Auth::attempt(['email' => 'khaldane19@gmail.com', 'password' => $_POST['password']]))) {
-            $portfolio = DB::table('portfolio')->orderBy('id','desc')->get();
-            $tutorials = ""; 
-            return View::make('pages.admin.admin-panel', array('portfolio' => $portfolio, 'tutorials' => $tutorials));
+            $portfolio = Admin::getPortfolio();
+            $tutorials = Admin::getTutorials(); 
+		  return View::make('pages.admin.admin-panel', array('portfolio' => $portfolio, 'tutorials' => $tutorials));
        } else {
            return Redirect::back()->withErrors(['Incorrect Password', 'error']);
        }
