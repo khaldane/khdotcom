@@ -15,7 +15,9 @@ class UserController extends BaseController {
 
     public function authenticate() {
        if((Auth::attempt(['email' => 'khaldane19@gmail.com', 'password' => $_POST['password']]))) {
-           return View::make('pages.admin.admin-panel');
+            $portfolio = DB::table('portfolio')->orderBy('id','desc')->get();
+            $tutorials = ""; 
+            return View::make('pages.admin.admin-panel', array('portfolio' => $portfolio, 'tutorials' => $tutorials));
        } else {
            return Redirect::back()->withErrors(['Incorrect Password', 'error']);
        }

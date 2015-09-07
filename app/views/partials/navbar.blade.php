@@ -9,6 +9,9 @@
             <li class="nav">{{ link_to_route('gaming', 'GAMING') }}</li>
             <li class="nav">{{ link_to_route('tutorials', 'TUTORIALS') }}</li>
             <li class="nav">{{ link_to_route('contact', 'CONTACT') }}</li>
+            @if(Auth::user()) 
+            <li class="nav">{{ link_to_route('admin-panel', 'ADMIN') }}</li>
+            @endif
         </ul>
          @if(Auth::user())
             <li class="nav nav-right"><a href="/logout"><i class="fa fa-sign-out"></i></a></li>

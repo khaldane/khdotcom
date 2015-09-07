@@ -71,3 +71,44 @@ Route::get('/admin', [
 	'as'     => 'admin-panel',
 	'uses'   => 'AdminController@index'
 ]);
+
+Route::get('/edit-portfolio', [
+	'as'     => 'portfolio-edit',
+	'uses'   => 'AdminController@portfolioEdit'
+]);
+
+
+Route::get('/delete-portfolio', [
+	'as'     => 'portfolio-delete',
+	'uses'   => 'AdminController@portfolioDelete'
+]);
+
+Route::get('/new-portfolio', [
+	'as'     => 'portfolio-create',
+	'uses'   => 'AdminController@portfolioCreate'
+]);
+
+Route::post('/save-portfolio', [
+	'as'     => 'portfolio-save',
+	'uses'   => 'AdminController@portfolioSave'
+]);
+
+Route::get('/new-tutorial', [
+	'as'     => 'tutorial-create',
+	'uses'   => 'AdminController@tutorialCreate'
+]);
+
+Route::get('/edit-tutorial', [
+	'as'     => 'tutorial-edit',
+	'uses'   => 'AdminController@tutorialEdit'
+]);
+
+Route::get('/delete-tutorial', [
+	'as'     => 'tutorial-delete',
+	'uses'   => 'AdminController@tutorialDelete'
+]);
+
+Route::post('/save-tutorial', [
+	'as'     => 'tutorial-save',
+	'uses'   => 'AdminController@tutorialSave'
+]);

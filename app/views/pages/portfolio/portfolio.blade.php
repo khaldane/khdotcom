@@ -8,7 +8,7 @@
         <div class="portfolio-header">
             <div class="portfolio-title">
                 <h2>Web &amp; Mobile <br> Development Portfolio</h2>
-                <hr>
+                <hr class="hr-small">
             </div>
         </div>
         <div class="portfolio-case-studies row">

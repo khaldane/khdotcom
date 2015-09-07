@@ -12,6 +12,9 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700, 100' rel='stylesheet' type='text/css'>
 
+<!-- ckeditor -->
+<script src="//cdn.ckeditor.com/4.5.3/standard/ckeditor.js"></script>
+
 <!-- JVector Maps-->
  <link rel="stylesheet" href="styles/jvectormap/jquery-jvectormap-2.0.4.css" type="text/css" media="screen"/> 
 
