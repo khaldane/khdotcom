@@ -6,14 +6,9 @@ class GamingController extends BaseController {
 	{
          $khaazix = file_get_contents('https://us.api.battle.net/wow/character/Arthas/Khaazix?locale=en_US&apikey=qw33hgtgns7p72d8vyn5psspsg7vgr43');
         
-         $character = json_decode($khaazix);
+        $character = json_decode($khaazix);
         
-        var_dump($character);
-        die();
-        
-		return View::make('pages.gaming.gaming');
-        
-        //http://us.battle.net/static-render/us/ **URL**
+		return View::make('pages.gaming.gaming', array('character' => $character));
 	}
     
     

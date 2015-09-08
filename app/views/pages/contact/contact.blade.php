@@ -44,7 +44,6 @@
                          <li><ul class="about featured-list">Font Awesome</ul></li>
                          <li><ul class="about featured-list">JVectorMap</ul></li>
                          <li><ul class="about featured-list">CKEditor</ul></li>
-                         <li><ul class="about featured-list">Slick</ul></li>
                     </div>
                      <div class="col-sm-3">
                          <h4>Services &amp; APIs</h4>
