@@ -10,10 +10,10 @@
                 <h2>Tutorials</h2>
                 <hr class="hr-small">
                  <div class="tutorial-types row">
-                    <div class="col-sm-3" ><h3 class="header-center">Cosplay</h3></div>
-                    <div class="col-sm-3"><h3 class="header-center">Android</h3></div>
-                    <div class="col-sm-3"><h3 class="header-center">iOS</h3></div>
-                      <div class="col-sm-3"><h3 class="header-center">PHP</h3></div>
+                    <div class="col-sm-3 white" ><h3 class="header-center">Cosplay</h3></div>
+                    <div class="col-sm-3 white"><h3 class="header-center">Android</h3></div>
+                    <div class="col-sm-3 white"><h3 class="header-center">iOS</h3></div>
+                      <div class="col-sm-3 white"><h3 class="header-center">PHP</h3></div>
                 </div>
             </div>
         </div>

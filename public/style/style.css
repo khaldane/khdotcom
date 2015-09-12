@@ -20,6 +20,20 @@ li {
     width: 200px;
 }
 
+.hr-gaming {
+    border-top: 5px solid #50b3eb;
+    width: 100%;
+    margin-top:-8px;
+    
+}
+
+.hr-line-break {
+    border-top: 1px solid #ddd;
+    width: 100%;
+    margin-top:-8px;
+}
+
+
 h2 {
     font-family: Lato, 'Open Sans', helvetica, sans-serif;
     color: #ffffff;
@@ -29,7 +43,6 @@ h2 {
 
 h3 {
     font-family: Lato, 'Open Sans', helvetica, sans-serif;
-    color: #ffffff;
     text-align: left;
 }
 
@@ -42,6 +55,14 @@ h4 {
     color: #50b3eb;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.black {
+    color: #333;
 }
 
 .header-center {
@@ -623,9 +644,8 @@ input, button, select, textarea {
 
 /** Gaming **/
 .gaming {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .game-types {
@@ -633,6 +653,15 @@ input, button, select, textarea {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+}
+
+.character-details {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.character-img {
+    margin-top: -60px;
 }
 
 
