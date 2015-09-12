@@ -29,6 +29,18 @@ Route::get('/gaming', [
 	'uses'   => 'GamingController@index'
 ]);
 
+Route::get('/diablo', [
+	'as'     => 'gaming',
+	'uses'   => 'GamingController@diablo'
+]);
+
+
+Route::get('/hots', [
+	'as'     => 'gaming',
+	'uses'   => 'GamingController@hots'
+]);
+
+
 
 Route::get('/tutorials', [
 	'as'     => 'tutorials',
