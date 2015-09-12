@@ -35,13 +35,13 @@ class GamingController extends BaseController {
     
     public function diablo() {
         //"http://media.blizzard.com/d3/icons/<type>/<size>/<icon>.png"
-//        
-//        //My data
-//        $diablo = file_get_contents('https://us.api.battle.net/d3/profile/maiomi-1598/?locale=en_US&apikey=qw33hgtgns7p72d8vyn5psspsg7vgr43');
-//        
+        
+        //My data
+        $data = file_get_contents('https://us.api.battle.net/d3/profile/maiomi-1598/?locale=en_US&apikey=qw33hgtgns7p72d8vyn5psspsg7vgr43');
+        
 //        //Character data
 //        $character = file_get_contents('https://us.api.battle.net/d3/profile/maiomi-1598/hero/40496088?locale=en_US&apikey=qw33hgtgns7p72d8vyn5psspsg7vgr43');
-        return View::make('pages.gaming.diablo');
+        return View::make('pages.gaming.diablo', array('data' => json_decode($data)));
     }
     
     public function hots() {

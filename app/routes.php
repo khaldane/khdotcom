@@ -89,6 +89,11 @@ Route::get('/edit-portfolio', [
 	'uses'   => 'AdminController@portfolioEdit'
 ]);
 
+Route::post('/update-portfolio', [
+	'as'     => 'portfolio-update',
+	'uses'   => 'AdminController@portfolioUpdate'
+]);
+
 
 Route::get('/delete-portfolio', [
 	'as'     => 'portfolio-delete',

@@ -15,7 +15,7 @@ class AdminController extends BaseController {
 	}
     
     public function portfolioCreate() {
-        return View::make('pages.admin.admin-portfolio');
+        return View::make('pages.admin.admin-create-portfolio');
     }
     
     
@@ -23,7 +23,7 @@ class AdminController extends BaseController {
         if($_GET) {
             $id = $_GET['id'];
             $caseStudy = Admin::getCaseStudy($_GET['id']);
-            return View::make('pages.admin.admin-portfolio', array('caseStudy' => $caseStudy[0]));
+            return View::make('pages.admin.admin-edit-portfolio', array('caseStudy' => $caseStudy[0]));
             
         } else {
             $portfolio = Admin::getPortfolio();
@@ -32,6 +32,12 @@ class AdminController extends BaseController {
         }
     }
     
+    public function portfolioUpdate() {
+        $update = Admin::updatePortfolio($_POST['id']);
+        $portfolio = Admin::getPortfolio();
+        $tutorials = Admin::getTutorials(); 
+        return View::make('pages.admin.admin-panel', array('portfolio' => $portfolio, 'tutorials' => $tutorials));
+    }
     
     public function portfolioDelete() {        
         if($_GET) {

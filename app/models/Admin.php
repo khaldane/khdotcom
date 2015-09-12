@@ -23,9 +23,30 @@ class Admin extends Eloquent  {
         return DB::table('tutorials')->where('id', $id)->get();   
     }
     
+    public static function updatePortfolio($id) {
+        return DB::table('portfolio')->where('id', $id)->update([
+            'companyName' => $_POST['companyName'],
+            'shortDescription' => $_POST['shortDescription'],
+            'description' => $_POST['editor1'],
+            'type' => $_POST['type'],
+            'languages' => $_POST['languages'],
+            'frameworks' => $_POST['frameworks'],
+            'features' => $_POST['features'],
+            //'featuredImg' => $_POST['featuredImg'],
+            //'mobileImg' => $_POST['mobileImg'],
+            //'secondaryImg' => $_POST['secondaryImg'],
+            //'mainImg' => $_POST['mainImg'],
+            'website' => $_POST['website'],
+            'tag' => $_POST['tag'],
+            'tools' => $_POST['tools'],
+            'secondaryDescription' => $_POST['secondaryDescription']
+        ]);
+    }
+    
     public static function saveTutorial() {
         return DB::table('tutorials')->insert([
             ['title' =>  $_POST['title'], 'type' => $_POST['type'], 'description' => $_POST['description']]
         ]);
     }
+    
 }
