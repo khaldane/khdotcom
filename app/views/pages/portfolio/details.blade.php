@@ -10,7 +10,7 @@
             <div class="case-study-title">
                 <div class="case-study-title-head">
                     <h2>{{{ $caseStudy->companyName }}}</h2>
-                    <hr class="hr-small">
+                    <hr>
                 </div>
                 <h3 class="featured-title">{{{ $caseStudy->shortDescription }}}</h3>
             </div>
@@ -58,21 +58,22 @@
             <h2 class="details-title">About The Project</h2>
             <div class="details-content">
                 <?php echo($caseStudy->description) ?>
-                
-                <h4>Tools</h4>
-                <?php $countTools = 1; ?>
-                @foreach(explode(',', $caseStudy->tools) as $tools)
-                    @if($countTools % 1 == 0)
-                        <div class="col-sm-4">
-                            <ul>
-                    @endif
-                            <li> <div class="featured-list"> {{{ $tools }}} </div> </li>
-                    @if($countTools % 1 == 0)
-                            </ul>
-                        </div>
-                    @endif
-                <?php $countTools++; ?>
-                @endforeach
+                <div class="details-tools">
+                    <h4>Tools</h4>
+                    <?php $countTools = 1; ?>
+                    @foreach(explode(',', $caseStudy->tools) as $tools)
+                        @if($countTools % 1 == 0)
+                            <div class="col-sm-4">
+                                <ul>
+                        @endif
+                                <li> <div class="featured-list"> {{{ $tools }}} </div> </li>
+                        @if($countTools % 1 == 0)
+                                </ul>
+                            </div>
+                        @endif
+                    <?php $countTools++; ?>
+                    @endforeach
+                </div>
             </div>
             
             <div class="details-screens">

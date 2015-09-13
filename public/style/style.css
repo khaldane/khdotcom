@@ -454,11 +454,22 @@ header a:hover {
     align-self: flex-end;
     height: 150px;
     width: 100%;
-    background-color: #191919;
+    background-color: #333;
     border-top: 2px solid #f0f5f8;
     position: absolute;
     bottom: 0;
     z-index: 10;
+}
+
+.details-tools {
+    padding-top: 10px;
+}
+
+.case-study-title-head hr {
+    border-top: 2px solid #eee;
+    width: 100px;
+    margin: 0;
+    margin-top: 5px;
 }
 
 .details-website {
@@ -518,7 +529,7 @@ header a:hover {
     margin-left: 20%;
     margin-right: 20%;
     line-height: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .details-features {
@@ -552,16 +563,15 @@ header a:hover {
 .details-screens {
     position: relative;
     clear: both;
-    padding-top: 200px;
-    height: 600px;
+    height: 570px;
 }
 
 .details-screens div {
     position: absolute;
-    top: 0;
     width: 350px;
     height: 607px;
     background: url(../images/multiscreen.png) no-repeat top left;
+    margin-top: 20px;
 }
 
 .details-screens div:not(.left):not(.right) {
@@ -575,7 +585,7 @@ header a:hover {
 
 
 .details-screens div.left:nth-child(1) {
-    left: -3%;
+    left: 15%;
     z-index: 2;
 }
 .details-screens div:nth-child(1) {
@@ -583,7 +593,7 @@ header a:hover {
 }
 
 .details-screens div.left:nth-child(2) {
-    left: 7%;
+    left: 21%;
     z-index: 3;
 }
 .details-screens div:nth-child(2) {
@@ -591,7 +601,7 @@ header a:hover {
 }
 
 .details-screens div.left:nth-child(3) {
-    left: 17%;
+    left: 28%;
     z-index: 4;
 }
 .details-screens div:nth-child(3) {
@@ -599,7 +609,7 @@ header a:hover {
 }
 
 .details-screens div.left:nth-child(4) {
-    left: -27%;
+    left: 35%;
     z-index: 5;
 }
 .details-screens div:nth-child(4) {
@@ -611,7 +621,7 @@ header a:hover {
 }
 
 .details-screens div.right:nth-child(6) {
-    right: -3%;
+    right: 15%;
     z-index: 2;
 }
 .details-screens div:nth-child(6) {
@@ -619,7 +629,7 @@ header a:hover {
 }
 
 .details-screens div.right:nth-child(7) {
-    right: 7%;
+    right: 21%;
     z-index: 3;
 }
 .details-screens div:nth-child(7) {
@@ -627,7 +637,7 @@ header a:hover {
 }
 
 .details-screens div.right:nth-child(8) {
-    right: 17%;
+    right: 28%;
     z-index: 4;
 }
 .details-screens div:nth-child(8) {
@@ -635,7 +645,7 @@ header a:hover {
 }
 
 .details-screens div.right:nth-child(9) {
-    right: 27%;
+    right: 35%;
     z-index: 5;
 }
 .details-screens div:nth-child(9) {
