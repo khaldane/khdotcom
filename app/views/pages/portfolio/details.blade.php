@@ -5,11 +5,13 @@
 
 @section('content')
 
-    <div id="details-wrap" style="background-image: url(../{{{ $caseStudy->mainImg }}}">
+    <div id="details-wrap" class="about" style="background-image: url(../{{{ $caseStudy->mainImg }}}">
         <div class="details-header">
             <div class="case-study-title">
-                <h2>{{{ $caseStudy->companyName }}}</h2>
-                <hr>
+                <div class="case-study-title-head">
+                    <h2>{{{ $caseStudy->companyName }}}</h2>
+                    <hr class="hr-small">
+                </div>
                 <h3 class="featured-title">{{{ $caseStudy->shortDescription }}}</h3>
             </div>
             <div class="details-nav">
@@ -22,7 +24,7 @@
                         @if($count % 3 == 0)
                         <div class="col-sm-4">
                         @endif
-                            <div class="about language-list"> {{{ $language }}} </div>
+                            <div class="language-list"> {{{ $language }}} </div>
                         @if($count % 3 == 0)
                         </div>
                         @endif
@@ -54,7 +56,7 @@
         </div>
         <div class="details-body">
             <h2 class="details-title">About The Project</h2>
-            <div class="about details-content">
+            <div class="details-content">
                 <?php echo($caseStudy->description) ?>
                 
                 <h4>Tools</h4>
@@ -64,7 +66,7 @@
                         <div class="col-sm-4">
                             <ul>
                     @endif
-                            <li> <div class="about featured-list"> {{{ $tools }}} </div> </li>
+                            <li> <div class="featured-list"> {{{ $tools }}} </div> </li>
                     @if($countTools % 1 == 0)
                             </ul>
                         </div>
@@ -73,8 +75,16 @@
                 @endforeach
             </div>
             
-            <div col-sm-12>
-                <div class="details-content-img"> </div>
+            <div class="details-screens">
+                <div class="left"></div>
+                <div class="left"></div>
+                <div class="left"></div>
+                <div class="left"></div>
+                <div></div>
+                <div class="right"></div>
+                <div class="right"></div>
+                <div class="right"></div>
+                <div class="right"></div>
             </div>
             
             <div class="details-features">
@@ -85,7 +95,7 @@
                         <div class="col-sm-6">
                             <ul>
                     @endif
-                            <li> <div class="about featured-list"> {{{ $feature }}} </div> </li>
+                            <li> <div class="featured-list"> {{{ $feature }}} </div> </li>
                     @if($countFeat % 1 == 0)
                             </ul>
                         </div>

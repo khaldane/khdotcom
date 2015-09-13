@@ -38,7 +38,6 @@ h2 {
     font-family: Lato, 'Open Sans', helvetica, sans-serif;
     color: #ffffff;
     font-weight: bold;
-    text-align: center;
 }
 
 h3 {
@@ -396,12 +395,21 @@ header a:hover {
 }
 
 .case-study-title {
-    text-align: center;
-    padding-top: 120px;
+    align-self: flex-end;
+    margin-bottom: 180px;
+    padding-left: 40px;
+    width: 100%;
+    text-align: left;
+}
+.case-study-title-head {
+    width: auto;
+}
+.case-study-title-head h2 {
+    display: inline-block;
 }
 
 .portfolio-icon-type {
-    height: 40px;
+    height: 30px;
     position: absolute;
     right: 0;
     margin-right:20px;
@@ -410,7 +418,6 @@ header a:hover {
 
 .case-study-title {
     margin-left: 30px;
-    
 }
 
 /** Details **/
@@ -427,6 +434,10 @@ header a:hover {
 }
 
 .details-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 50px;
     height: 100%;
     width: 100%;
     background: rgba(5,9,1,0);
@@ -440,6 +451,7 @@ header a:hover {
 }
 
 .details-nav {
+    align-self: flex-end;
     height: 150px;
     width: 100%;
     background-color: #191919;
@@ -519,7 +531,7 @@ header a:hover {
     height: 550px;
     margin-left: 10%;
     margin-right: 10%;
-    background: url(../images/goodlifeFitness.jpg);
+    background: url(../images/multiscreen.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -531,11 +543,103 @@ header a:hover {
     font-family: Bebas Neue, 'Open Sans', helvetica, sans-serif;
     color: #333;
     letter-spacing: 1px;
-    src: url("../fonts/BebasNeue/BebasNeue.otf") format("opentype");
     text-align: left;
     margin-left: 20%;
     margin-right: 20%;
     letter-spacing: 2px;
+}
+
+.details-screens {
+    position: relative;
+    clear: both;
+    padding-top: 200px;
+    height: 600px;
+}
+
+.details-screens div {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 607px;
+    background: url(../images/multiscreen.png) no-repeat top left;
+}
+
+.details-screens div:not(.left):not(.right) {
+    left: 50%;
+    z-index: 6;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+.details-screens div.left:nth-child(1) {
+    left: -3%;
+    z-index: 2;
+}
+.details-screens div:nth-child(1) {
+    background-position: -0px 0;
+}
+
+.details-screens div.left:nth-child(2) {
+    left: 7%;
+    z-index: 3;
+}
+.details-screens div:nth-child(2) {
+    background-position: -350px 0;
+}
+
+.details-screens div.left:nth-child(3) {
+    left: 17%;
+    z-index: 4;
+}
+.details-screens div:nth-child(3) {
+    background-position: -700px 0;
+}
+
+.details-screens div.left:nth-child(4) {
+    left: -27%;
+    z-index: 5;
+}
+.details-screens div:nth-child(4) {
+    background-position: -1050px 0;
+}
+
+.details-screens div:nth-child(5) {
+    background-position: -1400px 0;
+}
+
+.details-screens div.right:nth-child(6) {
+    right: -3%;
+    z-index: 2;
+}
+.details-screens div:nth-child(6) {
+    background-position: -1750px 0;
+}
+
+.details-screens div.right:nth-child(7) {
+    right: 7%;
+    z-index: 3;
+}
+.details-screens div:nth-child(7) {
+    background-position: -2100px 0;
+}
+
+.details-screens div.right:nth-child(8) {
+    right: 17%;
+    z-index: 4;
+}
+.details-screens div:nth-child(8) {
+    background-position: -2450px 0;
+}
+
+.details-screens div.right:nth-child(9) {
+    right: 27%;
+    z-index: 5;
+}
+.details-screens div:nth-child(9) {
+    background-position: -2800px 0;
 }
 
 /** Contact **/
@@ -570,6 +674,8 @@ header a:hover {
 
 .language-list {
     color: #7e7e7e;
+    margin-left: 15px;
+    margin-bottom: 5px;
 }
 
 /** Login **/
