@@ -417,7 +417,6 @@ header a:hover {
 
 #details-wrap {
     overflow-y: scroll;
-    background: url(../images/goodlifeFitness.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
