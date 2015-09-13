@@ -16,7 +16,7 @@
                 <div class="col-sm-4">
                     <div class="case-study" style="background-image: url(../{{{ $caseStudy->featuredImg }}});">
                         <div class="case-study-img-overlay">
-                            <h3 class="featured-title case-study-title">{{{ $caseStudy->companyName }}}</h3>
+                            <h3 class="featured-title-portfolio">{{{ $caseStudy->companyName }}}</h3>
                         </div>
                         <div class="case-study-body">
                             <p class="about"> {{{ $caseStudy->shortDescription }}}  

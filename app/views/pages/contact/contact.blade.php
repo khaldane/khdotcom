@@ -23,7 +23,7 @@
             <div class="about-webiste">
                 <div class="contact-content col-sm-offset-2 col-sm-8">
                     <h1>About katherinehaldane.com</h1>
-                    <p class="about">Cold-pressed messenger bag scenester Carles freegan normcore, pop-up migas art party mumblecore hella tousled banjo Banksy. Vegan fanny pack jean shorts, cardigan tattooed hella sartorial Williamsburg mumblecore disrupt hashtag sriracha yr health goth crucifix. Flannel food truck biodiesel sriracha try-hard sustainable. </p>
+                    <p class="about">My website is my playground! It is currently still under construction and I continue to work on it endlessly. There are many things to come such as an angular front-end, and more tutorials. As much of a mobile and backend developer as I am; I am alway interested in learning new languages and techniques as well as keeping up with the always advancing technology.</p>
                 </div>
                 <div class="contact-stack col-sm-12">
                     <div class="col-sm-3">
@@ -36,7 +36,7 @@
                      <div class="col-sm-3">
                          <h4>Frameworks</h4>
                          <li><ul class="about featured-list">Laravel</ul></li>
-                         <li><ul class="about featured-list">Angular</ul></li>
+                         <li><ul class="about featured-list">Angular (Coming Soon!)</ul></li>
                          <li><ul class="about featured-list">Bootstrap</ul></li>
                     </div>
                      <div class="col-sm-3">

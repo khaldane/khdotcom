@@ -21,21 +21,21 @@
                     </div>
                     <?php $count = 1; ?>
                     @foreach(explode(',', $caseStudy->languages) as $language)
-                        @if($count % 3 == 0)
+                        @if($count % 1 == 0)
                         <div class="col-sm-4">
                         @endif
                             <div class="language-list"> {{{ $language }}} </div>
-                        @if($count % 3 == 0)
+                        @if($count % 1 == 0)
                         </div>
                         @endif
                     <?php $count++; ?>
                     @endforeach
                 </div>
                 <div class="col-sm-4 visit-site-callout">
-                    @if(strpos($caseStudy->website,'http'))
-                        <a href="{{{ $caseStudy->website}}}" class="details-website">
+                    @if(strpos(strtolower($caseStudy->website),'release'))
+                        <a href="#" class="details-website">
                     @else
-                          <a href="#" class="details-website">
+                        <a href="{{{ $caseStudy->website}}}" class="details-website">
                     @endif
                         @if($caseStudy->type == 'Mobile')
                              <img class="details-icon-type" src="/images/assets/mobileIcon.png" alt="mobile" />
@@ -43,11 +43,11 @@
                             <img class="details-icon-type" src="/images/assets/webIcon.png" alt="web" />
                         @endif
                         <div class="details-website-text">
-                            @if(strpos($caseStudy->website,'http'))
+                            @if(strpos(strtolower($caseStudy->website),'release'))
+                                {{{ $caseStudy->website }}}
+                            @else
                                 Visit Site
                                 <i class="fa fa-long-arrow-right"></i>
-                            @else
-                                {{{ $caseStudy->website }}}
                             @endif
                         </div>
                     </a>
@@ -75,21 +75,20 @@
                     @endforeach
                 </div>
             </div>
-            
-            <div class="details-screens">
-                <div class="left"></div>
-                <div class="left"></div>
-                <div class="left"></div>
-                <div class="left"></div>
-                <div></div>
-                <div class="right"></div>
-                <div class="right"></div>
-                <div class="right"></div>
-                <div class="right"></div>
-            </div>
-            
+            @if($caseStudy->type == 'Mobile')
+                @if($caseStudy->tag == 'goodlife')
+                    @include('partials.portfolio.goodlifeMobile')
+                @elseif($caseStudy->tag == 'connex')
+                    @include('partials.portfolio.connexMobile')
+                @elseif($caseStudy->tag == 'playon')
+                    @include('partials.portfolio.playonMobile')
+                @endif
+            @else
+                <div class="details-seconday-img" style="background: url({{{ $caseStudy->secondaryImg }}}) no-repeat;     background-size: auto 100%;"></div>
+            @endif
             <div class="details-features">
                 <h4>Features</h4>
+                <p>Below is a general list of features I worked on within the project.</p>
                 <?php $countFeat = 1; ?>
                 @foreach(explode(',', $caseStudy->features) as $feature)
                     @if($countFeat % 1 == 0)

@@ -10,8 +10,6 @@
             <h2>Katherine Haldane</h2>
             <p class="about">
                 Welcome! My name is Katherine and I craft websites and mobile apps.
-                <br>
-                Want to go on a hunt? Learn more about me by finding the 5 easter eggs hidden within my site!
             </p>
             <div class="download-resume">
                 <p> <img class="download-img" src="images/assets/download.png"/> DOWNLOAD RESUME</p>
