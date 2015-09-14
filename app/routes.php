@@ -30,13 +30,13 @@ Route::get('/gaming', [
 ]);
 
 Route::get('/diablo', [
-	'as'     => 'gaming',
+	'as'     => 'diablo',
 	'uses'   => 'GamingController@diablo'
 ]);
 
 
 Route::get('/hots', [
-	'as'     => 'gaming',
+	'as'     => 'hots',
 	'uses'   => 'GamingController@hots'
 ]);
 
@@ -45,6 +45,24 @@ Route::get('/hots', [
 Route::get('/tutorials', [
 	'as'     => 'tutorials',
 	'uses'   => 'TutorialController@index'
+]);
+
+
+Route::get('/android', [
+	'as'     => 'android',
+	'uses'   => 'TutorialController@android'
+]);
+
+
+Route::get('/ios', [
+	'as'     => 'ios',
+	'uses'   => 'TutorialController@ios'
+]);
+
+
+Route::get('/php', [
+	'as'     => 'php',
+	'uses'   => 'TutorialController@php'
 ]);
 
 
@@ -113,6 +131,11 @@ Route::post('/save-portfolio', [
 Route::get('/new-tutorial', [
 	'as'     => 'tutorial-create',
 	'uses'   => 'AdminController@tutorialCreate'
+]);
+
+Route::get('/tutorial-details', [
+	'as'     => 'tutorial-details',
+	'uses'   => 'TutorialController@tutorialDetails'
 ]);
 
 Route::get('/edit-tutorial', [

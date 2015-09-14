@@ -23,7 +23,7 @@
             <div class="about-webiste">
                 <div class="contact-content col-sm-offset-2 col-sm-8">
                     <h1>About katherinehaldane.com</h1>
-                    <p class="about">My website is my playground! It is currently still under construction and I continue to work on it endlessly. There are many things to come such as an angular front-end, and more tutorials. As much of a mobile and backend developer as I am; I am alway interested in learning new languages and techniques as well as keeping up with the always advancing technology.</p>
+                    <p class="about">My website is my playground! It is currently still under construction and I continue to work on it endlessly. There are many things to come such as an angular front-end and more tutorials. As much of a mobile and backend developer as I am; I am alway interested in learning new languages and techniques as well as keeping up with the always advancing technology.</p>
                 </div>
                 <div class="contact-stack col-sm-12">
                     <div class="col-sm-3">

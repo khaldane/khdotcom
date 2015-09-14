@@ -258,7 +258,15 @@ header a:hover {
     color: #ffffff;
     letter-spacing: 1px;
     text-align: center;
-    padding-top: 20%;
+    position: absolute;
+    height: 100px;
+    width: 200px;    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .featured-body {
@@ -376,6 +384,7 @@ header a:hover {
     width: 100%;
     position: relative;
     height: 350px;
+    margin-bottom: 20px;
 }
 
 .case-study-img-overlay {

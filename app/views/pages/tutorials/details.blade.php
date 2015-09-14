@@ -34,23 +34,7 @@
             </div>
         </div>
         <div class="tutorials-content row">
-            @foreach($tutorials as $tutorial)
-                <div class="col-sm-3">
-                    <div class="case-study"  style="background-image: url(../{{{ $tutorial->featuredImg }}});">
-                        <div class="case-study-img-overlay">
-                        </div>
-                        <div class="case-study-body">
-                            <p class="about"> {{{ $tutorial->title }}}
-                                @if($tutorial->type == 'Android' || $tutorial->type == 'iOS')
-                                    <img class="portfolio-icon-type" src="/images/assets/webIcon.png" alt="img" /> </p>
-                                @else
-                                    <img class="portfolio-icon-type" src="/images/assets/mobileIcon.png" alt="img" /> </p>
-                                @endif
-                            <p> <a class="redirect" href="/tutorial-details"> LEARN MORE </a> <img class="learn-more-img" src="images/assets/arrow.png"/> </p>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
+            
         </div>
     </div>
 @stop
