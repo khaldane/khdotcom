@@ -31,7 +31,8 @@
         
         <div class="gaming about">
             <div class=" col-sm-12">
-               <h3>Coming Soon...</h3>
+                <h2>Check out my Hots Logs :)<a href="https://www.hotslogs.com/Player/Profile?PlayerID=3888922"> maiomi#1598 </a>
+                </h2>
             </div>
         </div>
     </div>

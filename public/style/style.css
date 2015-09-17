@@ -23,8 +23,11 @@ li {
 .hr-gaming {
     border-top: 5px solid #50b3eb;
     width: 100%;
-    margin-top:-8px;
-    
+    margin-top:-8px;   
+}
+
+th {
+    padding-right: 50px;
 }
 
 .hr-line-break {
@@ -33,10 +36,38 @@ li {
     margin-top:-8px;
 }
 
+dt {
+    font-weight: 100;
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+dd {
+    float: left;
+    color: #50b3eb;
+    width: 50%;
+}
+
+dl {
+    width: 100%;
+}
+
+.purple {
+    color: #a335ee;
+}
+
+.equipment-table tr {
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+}
+
+.progress-bar {
+    background-color: #50b3eb;
+}
 
 h2 {
     font-family: Lato, 'Open Sans', helvetica, sans-serif;
-    color: #ffffff;
     font-weight: bold;
 }
 
@@ -361,6 +392,8 @@ header a:hover {
     top: 0;
     background-color: #50b3eb;
 }
+
+
 
 .portfolio-title {
     padding-top: 90px;
@@ -967,9 +1000,17 @@ input, button, select, textarea {
 
 /** Gaming **/
 .gaming {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.right-shift{
+    padding-right: 20px;
+}
+
+.gaming-break {
+    margin-top: 20px;
+    margin-bottom: -10px;
 }
 
 .game-types {
@@ -984,10 +1025,39 @@ input, button, select, textarea {
     margin-left: 10px;
 }
 
+.character-details a {
+    color: #333;
+}
+
+.character-details a:hover {
+    color: #50b3eb;
+    cursor: pointer;
+    -webkit-transition: color 1s ease-out;
+    -moz-transition: color 1s ease-out;
+    -o-transition: color 1s ease-out;
+    transition: color 1s ease-out;
+    text-decoration: none;
+}
+
 .character-img {
     margin-top: -60px;
 }
 
+.orange {
+    color: #DB820C;
+}
+
+.yellow {
+    color: #DAD70E;
+}
+
+.blue {
+    color: #1D87FF;
+}
+
+.green {
+    color: #0f0;
+}
 
 /** Tutorials **/
 .tutorials-content {
@@ -997,10 +1067,28 @@ input, button, select, textarea {
     margin-bottom: 100px;
 }
 
+.tutorials-body {
+    margin-left: 20%;
+    margin-right: 20%;  
+    margin-bottom: 100px;
+}
+
 .tutorial-types {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.tutorial-tall {
+    height: 600px;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.tutorial-short {
+    height: 400px;
+    width: 800px;
+    margin-top: 20px;
 }
 
 /** Jvector Map **/

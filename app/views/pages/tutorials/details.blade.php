@@ -4,10 +4,10 @@
 @section('meta_description', 'my description')
 
 @section('content')
-    <div id="portfolio-wrap">
+    <div id="portfolio-wrap" class="about">
         <div class="portfolio-header">
             <div class="portfolio-title">
-                <h2>Tutorials</h2>
+                <h2>{{{ $tutorial->title}}}</h2>
                 <hr class="hr-small">
                  <div class="tutorial-types row">
                     <div class="col-sm-3 white" >
@@ -33,8 +33,8 @@
                 </div>
             </div>
         </div>
-        <div class="tutorials-content row">
-            
+        <div class="tutorials-body row">
+            <?php echo($tutorial->description) ?>
         </div>
     </div>
 @stop

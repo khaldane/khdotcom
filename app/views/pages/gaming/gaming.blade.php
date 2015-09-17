@@ -30,24 +30,26 @@
         </div>
         
         <div class="gaming about">
-            <div class=" col-sm-4">
+            <div class=" col-sm-5">
                 @foreach($characters as $char)
-                    <div class="character-header">
-                <img class="character-img" src="http://us.battle.net/static-render/us/{{{ $char->thumbnail }}}" alt="Khaazix"/>
-                        <div class="character-details black">
-                            <h3>{{{ $char->name }}} </h3>
-                    <p class="about">{{{ $char->level}}} {{{ $char->gender }}} {{{ $char->race }}} {{{ $char->class }}} <br> {{{ $char->realm }}} </p>
+                    @if($char->name != 'Khaazix')
+                        <div class="character-header">
+                    <img class="character-img" src="http://us.battle.net/static-render/us/{{{ $char->thumbnail }}}" alt="Khaazix"/>
+                            <div class="character-details black">
+                                <h3><a href="{{{ $char->armory}}}">{{{ $char->name }}}</a></h3>
+                        <p class="about">{{{ $char->level}}} {{{ $char->type }}} {{{ $char->raceName }}} {{{ $char->className }}} <br> {{{ $char->realm }}} </p>
+                            </div>
+                            <hr class="hr-gaming">
                         </div>
-                        <hr class="hr-gaming">
-                    </div>
+                @endif
                     
                 @endforeach
             </div>
-            <div class="character-header col-sm-8">
+            <div class="character-header col-sm-7">
                 <img class="character-img" src="http://us.battle.net/static-render/us/{{{ $character->thumbnail }}}" alt="Khaazix"/>
                 <div class="character-details black">
-                    <h3>{{{ $character->name }}} </h3>
-            <p class="about">{{{ $character->level}}} {{{ $character->gender }}} {{{ $character->race }}} {{{ $character->class }}} <br> {{{ $character->realm }}} </p>
+                    <h3><a href="{{{ $character->armory}}}">{{{ $character->name }}}</a> </h3>
+            <p class="about">{{{ $character->level}}} {{{ $character->type }}} {{{ $character->raceName }}} {{{ $character->className }}} <br> {{{ $character->realm }}} </p>
                 </div>
                 <hr class="hr-gaming">
                 <div class="col-sm-6">
@@ -72,27 +74,23 @@
                 <div class="col-sm-4">
                     <h4>Honourable Kills</h4>
                     <p>{{{ $stats->totalHonorableKills }}}</p>
-                    <div class="col-sm-4">
+                    <hr>
+                     <h4>Arena</h4>
                         <dl>
-                            <dt>Arena 2v2</dt>
+                            <dt>2v2</dt>
+                            <dd>0</dd>
+                            <dt>3v3</dt>
+                            <dd>0</dd>
+                            <dt>5v5</dt>
                             <dd>0</dd>
                         </dl>
                     </div>
-                    <div class="col-sm-4">
-                        <dt>Arena 3v3</dt>
-                        <dd>0</dd>
-                    </div>
-                    <div class="col-sm-4">
-                        <dt>Arena 5v5</dt>
-                        <dd>0</dd>
-                    </div>
-                </div>
-                <div class="col-sm-12">
+                <div class="col-sm-12 gaming-break">
                     <hr class="hr-line-break">
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-12 equipment-table">
                     <h4>Equipment</h4>
-                    <p class="about"> Average Item Level: {{{ $gear->items->averageItemLevel }}} </p>
+                    <p class="about"> Average Item Level: 682 </p>
                     <table>
                         <thead>
                             <tr>
@@ -104,72 +102,141 @@
                         <tbody>
                             @foreach($equipment as $e)
                             <tr>
-                                <td> {{{ $e->slot }}} </td>
+                                <td class="right-shift"> {{{ $e->slot }}} </td>
                                 <td> {{{ $e->level }}} </td>
-                                <td> {{{ $e->itemName }}} </td>
+                                <td class="purple"> {{{ $e->itemName }}}</td>
                             </tr>
                             @endforeach
                         </tbody>
                     </table>
                 </div>
-                <div class=" col-sm-12">
-                    <hr class="hr-line-break">
+                <div class=" col-sm-12 gaming-break">
                     <h3>Achievements</h3>
                     <dl class="col-sm-6">
                         <dt>Total</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:43%">
+                            1082 / 2510 
+                          </div>
+                        </div>
                     </dl>
                     <dl class="col-sm-6">
                         <dt>General</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:66%">
+                            40/ 60
+                          </div>
+                        </div>
                     </dl>
                     <dl class="col-sm-6">
                         <dt>Collections</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:47%">
+                            16 / 34
+                          </div>
+                        </div>
                     </dl>
                     <dl class="col-sm-6">
                         <dt>Quests</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                            64 / 254
+                          </div>
+                        </div>
                     </dl>
                     <dl class="col-sm-6">
                         <dt>Dungeons &amp; Raids</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                            448 / 883
+                          </div>
+                        </div>
                     </dl>
                     <dl class="col-sm-6">
                         <dt>Player vs Player</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:33%">
+                            96 / 285 
+                          </div>
+                        </div>
                     </dl>
                     <dl class="col-sm-6">
                         <dt>Exploration</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:57%">
+                            87 / 152 
+                          </div>
+                        </div>
                     </dl>
                     <dl class="col-sm-6">
                         <dt>Professions</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:27%">
+                            63 / 231 
+                          </div>
+                        </div>
                     </dl>
                     <dl class="col-sm-6">
                         <dt>Reputations</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                            33 / 81 
+                          </div>
+                        </div>
                     </dl>
                     <dl class="col-sm-6">
                         <dt>Scenarios</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:18%">
+                            14 / 77 
+                          </div>
+                        </div>
                     </dl>
                     <dl class="col-sm-6">
                         <dt>Garrisons</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:33%">
+                            40 / 121 
+                          </div>
+                        </div>
                     </dl>
                     <dl class="col-sm-6">
                         <dt>Pet Battles</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:33%">
+                            34 / 103 
+                          </div>
+                        </div>
                     </dl>
                     <dl class="col-sm-6">
                         <dt>World Events</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                            137 / 228 
+                          </div>
+                        </div>
                     </dl>
                     <dl class="col-sm-6">
                         <dt>Feats of Strength</dt>
-                        <dd>0</dd>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                          aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                            29
+                          </div>
+                        </div>
                     </dl>
                     <div class="col-sm-12">
                         <hr class="hr-line-break">
@@ -180,8 +247,8 @@
                             <dt>Mounts</dt>
                             <div class="progress">
                               <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                              aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                {{{ $mounts->mounts->numCollected}}}/{{{ $mounts->mounts->numNotCollected}}}
+                              aria-valuemin="0" aria-valuemax="100" style="width:42%">
+                                230 / 544
                               </div>
                             </div>
                         </dl>
@@ -189,8 +256,8 @@
                             <dt>Pets</dt>
                             <div class="progress">
                               <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                              aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                {{{ $pets->pets->numCollected}}}/{{{ $pets->pets->numNotCollected}}}
+                              aria-valuemin="0" aria-valuemax="100" style="width:53%">
+                                122 / 230
                               </div>
                             </div>
                         </dl>
