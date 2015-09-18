@@ -7,6 +7,10 @@ html, body {
     background-color: #191919;
 }
 
+.container {
+    max-width: 960px;
+}
+
 li {
     color: #50b3eb;
 }
@@ -139,27 +143,27 @@ header a:hover {
     background: #191919;
 }
 
-.nav>li>a { 
+.navbar-default .navbar-nav>li>a { 
     color: #ffffff;
     display: inline-block;
     padding: 16px 15px;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
 }
 
 .navbar-default {
     border-color: #444; 
 }
 
-.nav {
+.navbar-default .navbar-nav {
     font-size: 12px;
 }
 
-.nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover {
     color: #50b3eb;
     cursor: pointer;
-    -webkit-transition: color 1s ease-out;
-    -moz-transition: color 1s ease-out;
-    -o-transition: color 1s ease-out;
-    transition: color 1s ease-out;
 }
 
 .nav-right {
@@ -400,6 +404,10 @@ header a:hover {
     text-align: center;
 }
 
+.portfolio-title h2 {
+    color: white;
+}
+
 .portfolio-case-studies {
     margin-left:30px;
     margin-right: 30px;
@@ -456,6 +464,7 @@ header a:hover {
 }
 .case-study-title-head h2 {
     display: inline-block;
+    color: white;
 }
 
 .portfolio-icon-type {
@@ -522,12 +531,13 @@ header a:hover {
     margin-top: 5px;
 }
 
-.details-website {
+a.details-website {
     display: block;
     height: 100%;
     width: 100%;
     background: #50b3eb;
     text-align: center;
+    text-decoration: none;
 }
     
 .details-icon-type {
@@ -576,22 +586,21 @@ header a:hover {
 }
 
 .details-content {
-    margin-left: 20%;
-    margin-right: 20%;
     line-height: 25px;
     padding-bottom: 30px;
 }
 
 .details-features {
-    margin-left: 20%;
-    margin-right: 20%;
     margin-top: 20px;
+}
+
+.details-features li {
+    padding-left: 0;
 }
 
 .details-content-img {
     height: 550px;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100%;
     background: url(../images/multiscreen.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -605,17 +614,14 @@ header a:hover {
     color: #333;
     letter-spacing: 1px;
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
     letter-spacing: 2px;
 }
 
 .details-seconday-img {
     position: relative;
     clear: both;
-    height: 600px;
-    margin-left: 25%;
-
+    height: auto;
+    width: 100%;
 }
 
 .details-screens {
