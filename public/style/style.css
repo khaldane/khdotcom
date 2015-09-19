@@ -122,7 +122,10 @@ header a:hover {
     color: #0BABDA;
     background: none;
     transition: color .3s;
-    -webkit-transition: color .3s;
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 /* Navbar */
@@ -170,6 +173,20 @@ header a:hover {
     padding: 16px 15px;
     float:right;
     font-size: 16px;
+}
+
+.login a {
+    color: white;
+}
+
+.login a:hover {
+    color: #50b3eb;
+    cursor: pointer;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
+    text-decoration: none;
 }
 
 #logo {
@@ -357,10 +374,10 @@ header a:hover {
 .facebook, .linkedin, .github , .email{
     color: #7e7e7e;
     font-size: 30px;
-    -webkit-transition: color 1s ease-out;
-    -moz-transition: color 1s ease-out;
-    -o-transition: color 1s ease-out;
-    transition: color 1s ease-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
 }
 
 .facebook:hover, .linkedin:hover, .github:hover, .email:hover{
@@ -959,6 +976,9 @@ input, button, select, textarea {
 
 
 /** Admin **/
+.form-group input {
+ padding: 10px 120px 10px 10px   
+}
 
 .admin-header {
     height: 220px;
@@ -992,8 +1012,6 @@ input, button, select, textarea {
 }
 /* form */
 .form {
-    margin-right: 20%;
-    margin-left: 20%;
     margin-top: 20px;
     margin-bottom: 100px;
 }
@@ -1006,8 +1024,8 @@ input, button, select, textarea {
 
 /** Gaming **/
 .gaming {
-    margin-left: 20%;
-    margin-right: 20%;
+
+    padding-bottom: 100px;
 }
 
 .right-shift{
@@ -1026,6 +1044,11 @@ input, button, select, textarea {
     margin-top: 30px;
 }
 
+.game-types a {
+    color: white;
+    text-decoration: none;
+}
+
 .character-details {
     display: inline-block;
     margin-left: 10px;
@@ -1038,10 +1061,10 @@ input, button, select, textarea {
 .character-details a:hover {
     color: #50b3eb;
     cursor: pointer;
-    -webkit-transition: color 1s ease-out;
-    -moz-transition: color 1s ease-out;
-    -o-transition: color 1s ease-out;
-    transition: color 1s ease-out;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    -o-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
     text-decoration: none;
 }
 
@@ -1073,9 +1096,7 @@ input, button, select, textarea {
     margin-bottom: 100px;
 }
 
-.tutorials-body {
-    margin-left: 20%;
-    margin-right: 20%;  
+.tutorials-body { 
     margin-bottom: 100px;
 }
 
@@ -1083,6 +1104,11 @@ input, button, select, textarea {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.tutorial-types a {
+    color: white;
+    text-decoration: none;
 }
 
 .tutorial-tall {
@@ -1095,6 +1121,15 @@ input, button, select, textarea {
     height: 400px;
     width: 800px;
     margin-top: 20px;
+}
+
+.hots-log a {
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.coming-soon {
+    padding-top: 20px;   
 }
 
 /** Jvector Map **/

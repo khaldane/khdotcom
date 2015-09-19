@@ -35,7 +35,7 @@
                     @if(strpos(strtolower($caseStudy->website),'release'))
                         <a href="#" class="details-website">
                     @else
-                        <a href="{{{ $caseStudy->website}}}" class="details-website">
+                        <a href="{{{ $caseStudy->website}}}" class="details-website" target="_blank">
                     @endif
                         @if($caseStudy->type == 'Mobile')
                              <img class="details-icon-type" src="/images/assets/mobileIcon.png" alt="mobile" />

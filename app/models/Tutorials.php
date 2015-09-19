@@ -15,7 +15,7 @@ class Tutorials extends Eloquent  {
         return DB::table('tutorials')->where('id',$id)->get();
     }
     
-        public static function getTutorialType($type) {
-        return DB::table('tutorials')->where('type',$type)->get();
+    public static function getTutorialType($type) {
+        return DB::table('tutorials')->where('type',$type)->orderBy('id','desc')->get();
     }
 }

@@ -6,9 +6,8 @@
 @section('content')
     <div id="contact-wrap">
         <div class="login-form">
-            
             <p class="about"> Shhh... it's a secret! <br> Why is it a secret? <br> Because it is a secret!</p>
-            <hr class="login-hr">
+            <hr>
             {{ Form::open(array('action' => 'UserController@authenticate', 'class' => 'form-horizontal')) }}
                 <div class="form-group">
                     {{ Form::password('password', array('placeholder'=>'Secret', 'autofocus'=>'autofocus')) }} 

@@ -33,8 +33,12 @@
                 </div>
             </div>
         </div>
-        <div class="tutorials-body row">
-            <?php echo($tutorial->description) ?>
+        <div class="tutorials-body">
+            <div class="container">
+                <div class="row">
+                    <?php echo($tutorial->description) ?>
+                </div>
+            </div>
         </div>
     </div>
 @stop

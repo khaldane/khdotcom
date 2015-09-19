@@ -14,9 +14,9 @@
             @endif
         </ul>
          @if(Auth::user())
-            <li class="nav nav-right"><a href="/logout"><i class="fa fa-sign-out"></i></a></li>
+            <li class="nav nav-right login"><a href="/logout"><i class="fa fa-sign-out"></i></a></li>
          @else
-             <li class="nav nav-right"><a href="/login"><i class="fa fa-sign-in"></i></a></li>
+             <li class="nav nav-right login"><a href="/login"><i class="fa fa-sign-in"></i></a></li>
          @endif
      </div>
     </nav>

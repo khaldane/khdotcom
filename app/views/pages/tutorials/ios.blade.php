@@ -33,28 +33,34 @@
                 </div>
             </div>
         </div>
-        <div class="tutorials-content row">
-            @if(sizeof($tutorials) > 0)
-                @foreach($tutorials as $tutorial)
-                    <div class="col-sm-3">
-                        <div class="case-study"  style="background-image: url(../{{{ $tutorial->featuredImg }}});">
-                            <div class="case-study-img-overlay">
+        <div class="tutorials-content">
+            <div class="container">
+                <div class="row">
+                    @if(sizeof($tutorials) > 0)
+                        @foreach($tutorials as $tutorial)
+                            <div class="col-sm-3">
+                                <div class="case-study"  style="background-image: url(../{{{ $tutorial->featuredImg }}});">
+                                    <div class="case-study-img-overlay">
+                                    </div> 
+                                    <div class="case-study-body">
+                                        <p class="about"> {{{ $tutorial->title }}}
+                                            @if($tutorial->type == 'Android' || $tutorial->type == 'iOS')
+                                                <img class="portfolio-icon-type" src="/images/assets/webIcon.png" alt="img" /> </p>
+                                            @else
+                                                <img class="portfolio-icon-type" src="/images/assets/mobileIcon.png" alt="img" /> </p>
+                                            @endif
+                                        <p> <a class="redirect" href="/tutorial-details?id={{{ $tutorial->id }}}"> LEARN MORE </a> <img class="learn-more-img" src="images/assets/arrow.png"/> </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="case-study-body">
-                                <p class="about"> {{{ $tutorial->title }}}
-                                    @if($tutorial->type == 'Android' || $tutorial->type == 'iOS')
-                                        <img class="portfolio-icon-type" src="/images/assets/webIcon.png" alt="img" /> </p>
-                                    @else
-                                        <img class="portfolio-icon-type" src="/images/assets/mobileIcon.png" alt="img" /> </p>
-                                    @endif
-                                <p> <a class="redirect" href="/tutorial-details?id={{{ $tutorial->id }}}"> LEARN MORE </a> <img class="learn-more-img" src="images/assets/arrow.png"/> </p>
-                            </div>
-                        </div>
+                        @endforeach
+                    @else
+                    <div class="coming-soon">
+                            <h2>Coming Soon...</h2>
                     </div>
-                @endforeach
-            @else
-                <p>Coming Soon...</p>
-            @endif
+                    @endif
+                </div>
+            </div>
         </div>
     </div>
 @stop
