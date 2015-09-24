@@ -1,7 +1,7 @@
 @extends('partials.default')
 
 @section('meta_title', 'khaldane - details')
-@section('meta_description', 'case study details')
+@section('meta_description', 'I am a full-stack developer that specializes in web and mobile development.')
 
 @section('content')
     <div id="details-wrap" class="about" style="background-image: url(../{{ $caseStudy->mainImg }}">

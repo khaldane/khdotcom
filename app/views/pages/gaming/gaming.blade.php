@@ -1,7 +1,7 @@
 @extends('partials.default')
 
 @section('meta_title', 'khaldane - gaming')
-@section('meta_description', 'my games')
+@section('meta_description', 'I am a full-stack developer that specializes in web and mobile development.')
 
 @section('content')
     <div id="portfolio-wrap">

@@ -1,7 +1,7 @@
 @extends('partials.default')
 
 @section('meta_title', 'khaldane - contact')
-@section('meta_description', 'contact me')
+@section('meta_description', 'I am a full-stack developer that specializes in web and mobile development.')
 
 @section('content')
     <div id="contact-wrap">

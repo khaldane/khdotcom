@@ -1,10 +1,9 @@
 @extends('partials.default')
 
 @section('meta_title', 'khaldane')
-@section('meta_description', 'my description')
+@section('meta_description', 'I am a full-stack developer that specializes in web and mobile development.')
 
 @section('content')
-@include_once('pages.analyticstracking.php')
     <div class="content-left">
         <div class="about-wrap about">
             <img class="about-img" src="/images/khaldane.png" alt="Katherine Haldane" />

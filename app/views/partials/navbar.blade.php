@@ -5,7 +5,7 @@
             <a class="navbar-brand" href="/"> <img id="logo" src="/images/khlogo.png" alt="Katherine Haldane Logo" /> </a>
         </div>
         <ul class="nav navbar-nav navbar-left nav-start">
-            <li class="nav about">{{ link_to_route('portfolio', 'PORTFOLIO') }}</li>
+            <li class="nav about">{{{ link_to_route('portfolio', 'PORTFOLIO') }}}</li>
             <li class="nav about">{{ link_to_route('gaming', 'GAMING') }}</li>
             <li class="nav about">{{ link_to_route('tutorials', 'TUTORIALS') }}</li>
             <li class="nav about">{{ link_to_route('contact', 'CONTACT') }}</li>

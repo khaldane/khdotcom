@@ -11,5 +11,6 @@
     </main>
     @include('partials.footer_meta')
 	@include('partials.footer')
+    @include_once('pages.analyticstracking.php')
 </body>
 </html>
