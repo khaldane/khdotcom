@@ -87,7 +87,7 @@
                                 @include('partials.portfolio.playonMobile')
                             @endif
                         @else
-                            <img class="details-seconday-img" src="{{{ $caseStudy->secondaryImg }}}" />
+                            <img class="details-seconday-img" src="/{{{ $caseStudy->secondaryImg }}}" />
                         @endif
                         <div class="details-features">
                             <h4>Features</h4>

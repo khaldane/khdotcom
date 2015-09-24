@@ -7,6 +7,10 @@ html, body {
     background-color: #191919;
 }
 
+a {   
+    text-decoration: none !important;
+}
+
 .container {
     max-width: 960px;
 }
@@ -42,15 +46,16 @@ th {
 
 dt {
     font-weight: 100;
-    width: 50%;
     display: inline-block;
-    float: left;
+    vertical-align: top;
+    width: 48.5%;
 }
 
 dd {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     color: #50b3eb;
-    width: 50%;
+    width: 48.5%;
 }
 
 dl {
@@ -68,6 +73,15 @@ dl {
 
 .progress-bar {
     background-color: #50b3eb;
+}
+.progress span {
+    text-align: center;
+    white-space: nowrap;
+    margin-top: -20px;
+    float: left;
+    font-size: 0.8em;
+    width: 100%;
+    color: #333;
 }
 
 h2 {
@@ -210,6 +224,7 @@ header a:hover {
     top: 50px;
     bottom: 50px;
     width: 400px;
+    z-index: 50;
     padding: 80px 30px;
     position: absolute;
     border-right: thick double #191919;
@@ -253,6 +268,12 @@ header a:hover {
     font-size: 14px;
     padding-top: 5px;
 }
+
+.download-resume a {
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+}
+
 
 .download-img {
     opacity: 0.5;
@@ -328,18 +349,37 @@ header a:hover {
     z-index: 11;
 }
 
-.featured-mobile {
-    height: 462px;
-    margin-left: 40px;
-    position: fixed;
-    bottom: -60px;
+@media screen and (max-width: 1281px) {
+    .featured-mobile {
+        height: 462px;
+        margin-left: 40px;
+        position: fixed;
+        bottom: -60px;
+    }
+
+    .featured-text-body {
+        position: fixed;
+        bottom: 64px;
+        margin-left: 350px;
+    }
 }
 
-.featured-text-body {
-    position: fixed;
-    bottom: 64px;
-    margin-left: 350px;
+@media screen and (min-width: 1282px) {
+
+    .featured-mobile {
+        height: 580px;
+        margin-left: 40px;
+        position: fixed;
+        bottom: -80px;
+    }
+
+    .featured-text-body {
+        position: fixed;
+        bottom: 64px;
+        margin-left: 430px;
+    }
 }
+
 
 .featured-text-body a {
     color: #ffffff;
@@ -939,11 +979,13 @@ a.details-website {
 }
 
 .contact-stack {
-   margin: 20px;
+   margin-top: 20px;
 }
 
 .featured-list {
- color: #333;   
+    color: #333;   
+    padding-right: 10px;
+    padding-left: 0;
 }
 
 .language-list {
@@ -1023,6 +1065,11 @@ input, button, select, textarea {
 }
 
 /** Gaming **/
+#wow .character-details h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .gaming {
 
     padding-bottom: 100px;
@@ -1051,7 +1098,9 @@ input, button, select, textarea {
 
 .character-details {
     display: inline-block;
-    margin-left: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 92px;
 }
 
 .character-details a {
@@ -1069,7 +1118,12 @@ input, button, select, textarea {
 }
 
 .character-img {
-    margin-top: -60px;
+    float: left;
+    margin-right: 10px;
+}
+
+.character-attributes dd {
+    padding-left: 10px;
 }
 
 .orange {
@@ -1134,11 +1188,26 @@ input, button, select, textarea {
 
 /** Jvector Map **/
 
-#world-map-markers {
-    width: 800px;
-    height: 400px; 
-    bottom: 0;
-    position: absolute;
-    margin-bottom: 20px;
-    left: 40%;
+@media screen and (min-width: 1920px) {
+    #world-map-markers {
+        width: 800px;
+        height: 400px; 
+        bottom: 0;
+        position: absolute;
+        margin-bottom: 20px;
+        left: 40%;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 1919px) {
+    #world-map-markers {
+        width: 800px;
+        height: 400px; 
+        bottom: 0;
+        position: absolute;
+        margin-bottom: 20px;
+        left: 40%;
+        visibility: hidden;
+    }
 }

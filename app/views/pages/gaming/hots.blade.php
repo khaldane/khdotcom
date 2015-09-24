@@ -1,6 +1,6 @@
 @extends('partials.default')
 
-@section('meta_title', 'khaldane - portfolio')
+@section('meta_title', 'khaldane')
 @section('meta_description', 'my description')
 
 @section('content')
@@ -16,12 +16,12 @@
                         </a>
                     </div>
                     <div class="col-sm-4 white"> 
-                        <a href="/diablo"> 
+                        <a href="/gaming/diablo"> 
                             <h3 class="header-center"> Diablo 3</h3> 
                         </a>
                     </div>
                     <div class="col-sm-4 white">
-                        <a href="/hots"> 
+                        <a href="/gaming/hots"> 
                             <h3 class="header-center">Heroes of the Storm</h3>
                         </a>
                     </div>
@@ -41,3 +41,4 @@
         </div>
     </div>
 @stop
+

@@ -16,12 +16,12 @@
                         </a>
                     </div>
                     <div class="col-sm-4 white"> 
-                        <a href="/diablo"> 
+                        <a href="/gaming/diablo"> 
                             <h3 class="header-center"> Diablo 3</h3> 
                         </a>
                     </div>
                     <div class="col-sm-4 white">
-                        <a href="/hots"> 
+                        <a href="/gaming/hots"> 
                             <h3 class="header-center">Heroes of the Storm</h3>
                         </a>
                     </div>
@@ -36,75 +36,67 @@
                         <div>
                             <h3>Career</h3>
                             <dl>
-                                <dt>
-                                    <dt>Battle Tag</dt>
-                                    <dd> {{{ $career->battleTag}}} </dd>
-                                </dt>
-                                <dt>
-                                    <dt>Lifetime Kills</dt>
-                                    <dd>{{{ $career->monsters}}} </dd>
-                                </dt>
-                                <dt>
-                                    <dt>Elite Kills</dt>
-                                    <dd>{{{ $career->elites}}} </dd>
-                                </dt>
-                                <dt>
-                                    <dt>Paragon Level</dt>
-                                    <dd>{{{ $career->paragonLevel}}} </dd>
-                                </dt>
+                                <dt>Battle Tag</dt>
+                                <dd> {{{ $career->battleTag}}} </dd>
+                                <dt>Lifetime Kills</dt>
+                                <dd>{{{ $career->monsters}}} </dd>
+                                <dt>Elite Kills</dt>
+                                <dd>{{{ $career->elites}}} </dd>
+                                <dt>Paragon Level</dt>
+                                <dd>{{{ $career->paragonLevel}}} </dd>
                             </dl>
                         </div>
                         <div>
                             <h3>Time Played</h3>
                             <dl>
-                                <dt>
-                                    <dt>Barbarian</dt>
+                                <dt>Barbarian</dt>
+                                <dd>
                                        <div class="progress">
                                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                             aria-valuemin="0" aria-valuemax="100" style="width:9%">
                                             </div>
                                         </div>
-                                </dt>
-                                <dt>
-                                    <dt>Crusader</dt>
+                                </dd>
+                                <dt>Crusader</dt>
+                                <dd>
                                    <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                         aria-valuemin="0" aria-valuemax="100" style="width:20%">
                                         </div>
                                     </div>
-                                </dt>
-                                <dt>
-                                    <dt>Demon Hunter</dt>
+                                </dd>
+                                <dt>Demon Hunter</dt>
+                                <dd>
                                         <div class="progress">
                                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                             aria-valuemin="0" aria-valuemax="90" style="width:90%">
                                             </div>
                                         </div>
-                                </dt>
-                                <dt>
-                                    <dt>Monk</dt>
+                                </dd>
+                                <dt>Monk</dt>
+                                <dd>
                                    <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                         aria-valuemin="0" aria-valuemax="100" style="width:7%">
                                         </div>
                                     </div>
-                                </dt>
-                                <dt>
-                                    <dt>Witch Doctor</dt>
+                                </dd>
+                                <dt>Witch Doctor</dt>
+                                <dd>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                         aria-valuemin="0" aria-valuemax="100" style="width:100%">
                                         </div>
                                     </div>
-                                </dt>
-                                <dt>
-                                    <dt>Wizard</dt>
+                                </dd>
+                                <dt>Wizard</dt>
+                                <dd>
                                    <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                         aria-valuemin="0" aria-valuemax="100" style="width:35%">
                                         </div>
                                     </div>
-                                </dt>
+                                </dd>
                             </dl>
                         </div>
                     </div>
@@ -119,7 +111,7 @@
                                     </div>
                                     <hr class="hr-gaming">
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-4 character-attributes">
                                     <h3>Attributes</h3>
                                     <dl>
                                         <dt>Strength</dt>

@@ -25,7 +25,7 @@
                                 @else
                                     <img class="portfolio-icon-type" src="/images/assets/mobileIcon.png" alt="img" /> </p>
                                 @endif
-                            <p> <a class="redirect" href="/details?id={{{ $caseStudy->tag }}}"> LEARN MORE </a> <img class="learn-more-img" src="images/assets/arrow.png"/> </p>
+                            <p> <a class="redirect" href="/portfolio/details?id={{{ $caseStudy->tag }}}"> LEARN MORE </a> <img class="learn-more-img" src="images/assets/arrow.png"/> </p>
                         </div>
                     </div>
                 </div>

@@ -16,17 +16,17 @@
                         </a>
                      </div>
                     <div class="col-sm-3 white">
-                         <a href="/android">
+                         <a href="/tutorials/android">
                             <h3 class="header-center">Android</h3>
                         </a>
                      </div>
                     <div class="col-sm-3 white">
-                         <a href="/ios">
+                         <a href="/tutorials/ios">
                             <h3 class="header-center">iOS</h3>
                         </a>
                      </div>
                       <div class="col-sm-3 white">
-                           <a href="/php">
+                           <a href="/tutorials/php">
                             <h3 class="header-center">PHP</h3>
                         </a>
                      </div>
@@ -41,12 +41,8 @@
                         </div>
                         <div class="case-study-body">
                             <p class="about"> {{{ $tutorial->title }}}
-                                @if($tutorial->type == 'Android' || $tutorial->type == 'iOS')
-                                    <img class="portfolio-icon-type" src="/images/assets/webIcon.png" alt="img" /> </p>
-                                @else
-                                    <img class="portfolio-icon-type" src="/images/assets/mobileIcon.png" alt="img" /> </p>
-                                @endif
-                            <p> <a class="redirect" href="/tutorial-details?id={{{ $tutorial->id }}}"> LEARN MORE </a> <img class="learn-more-img" src="images/assets/arrow.png"/> </p>
+                                    <img class="portfolio-icon-type" src="/images/assets/cosplayIcon.png" alt="img" /> </p>
+                            <p> <a class="redirect" href="/tutorials/details?id={{{ $tutorial->id }}}"> LEARN MORE </a> <img class="learn-more-img" src="images/assets/arrow.png"/> </p>
                         </div>
                     </div>
                 </div>

@@ -12,16 +12,16 @@
                 <div class="game-types row">
                     <div class="col-sm-4 white" >
                         <a href="/gaming">
-                            <h3 class="header-center"> World of Warcraft</h3>
+                            <h3 class="header-center">World of Warcraft</h3>
                         </a>
                     </div>
                     <div class="col-sm-4 white"> 
-                        <a href="/diablo"> 
-                            <h3 class="header-center"> Diablo 3</h3> 
+                        <a href="/gaming/diablo"> 
+                            <h3 class="header-center">Diablo 3</h3> 
                         </a>
                     </div>
                     <div class="col-sm-4 white">
-                        <a href="/hots"> 
+                        <a href="/gaming/hots"> 
                             <h3 class="header-center">Heroes of the Storm</h3>
                         </a>
                     </div>
@@ -29,15 +29,15 @@
             </div>
         </div>
         
-        <div class="gaming about">
+        <div class="gaming about" id="wow">
             <div class="container">
                 <div class="row">
                     <div class=" col-sm-5">
                         @foreach($characters as $char)
                             @if($char->name != 'Khaazix')
                                 <div class="character-header">
-                            <img class="character-img" src="http://us.battle.net/static-render/us/{{{ $char->thumbnail }}}" alt="Khaazix"/>
                                     <div class="character-details black">
+                                        <img class="character-img" src="http://us.battle.net/static-render/us/{{{ $char->thumbnail }}}" alt="Khaazix"/>
                                         <h3><a href="{{{ $char->armory}}}" target="_blank">{{{ $char->name }}}</a></h3>
                                 <p class="about">{{{ $char->level}}} {{{ $char->type }}} {{{ $char->raceName }}} {{{ $char->className }}} <br> {{{ $char->realm }}} </p>
                                     </div>
@@ -48,8 +48,8 @@
                         @endforeach
                     </div>
                     <div class="character-header col-sm-7">
-                        <img class="character-img" src="http://us.battle.net/static-render/us/{{{ $character->thumbnail }}}" alt="Khaazix"/>
                         <div class="character-details black">
+                            <img class="character-img" src="http://us.battle.net/static-render/us/{{{ $character->thumbnail }}}" alt="Khaazix"/>
                             <h3><a href="{{{ $character->armory}}}" target="_blank">{{{ $character->name }}}</a> </h3>
                     <p class="about">{{{ $character->level}}} {{{ $character->type }}} {{{ $character->raceName }}} {{{ $character->className }}} <br> {{{ $character->realm }}} </p>
                         </div>
@@ -119,8 +119,8 @@
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                   aria-valuemin="0" aria-valuemax="100" style="width:43%">
-                                    1082 / 2510 
                                   </div>
+                                  <span>1082 / 2510</span>
                                 </div>
                             </dl>
                             <dl class="col-sm-6">

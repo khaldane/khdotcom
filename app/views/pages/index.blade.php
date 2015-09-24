@@ -12,7 +12,9 @@
                 Welcome! My name is Katherine and I craft websites and mobile apps.
             </p>
             <div class="download-resume">
-                <p> <img class="download-img" src="images/assets/download.png"/> DOWNLOAD RESUME</p>
+                <p>
+                <a href="resume/KatherineHaldaneResume.pdf" download><img class="download-img" src="images/assets/download.png"/>  DOWNLOAD RESUME</a>
+                </p>
             </div>
         </div>
     </div>
@@ -28,7 +30,7 @@
                     <div class= "featured-text-body">
                         <h3 class="featured-title">Goodlife Fitness</h3>
                         <p class="about">Android front &amp; back end development</p>
-                        <p> <a class="redirect" href="/details?id=goodlife"> LEARN MORE </a> <img class="learn-more-img" src="images/assets/arrow.png"/> </p>
+                        <p> <a class="redirect" href="/portfolio/details?id=goodlife"> LEARN MORE </a> <img class="learn-more-img" src="images/assets/arrow.png"/> </p>
                     </div>
                 </div>
             </div>

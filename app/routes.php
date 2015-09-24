@@ -19,23 +19,23 @@ Route::get('/', function()
 /* 
  * Navbar
  */
-Route::get('/portfolio', [
+Route::get('portfolio', [
 	'as'     => 'portfolio',
 	'uses'   => 'PortfolioController@index'
 ]);
 
-Route::get('/gaming', [
+Route::get('gaming', [
 	'as'     => 'gaming',
 	'uses'   => 'GamingController@index'
 ]);
 
-Route::get('/diablo', [
+Route::get('gaming/diablo', [
 	'as'     => 'diablo',
 	'uses'   => 'GamingController@diablo'
 ]);
 
 
-Route::get('/hots', [
+Route::get('gaming/hots', [
 	'as'     => 'hots',
 	'uses'   => 'GamingController@hots'
 ]);
@@ -48,21 +48,26 @@ Route::get('/tutorials', [
 ]);
 
 
-Route::get('/android', [
+Route::get('/tutorials/android', [
 	'as'     => 'android',
 	'uses'   => 'TutorialController@android'
 ]);
 
 
-Route::get('/ios', [
+Route::get('/tutorials/ios', [
 	'as'     => 'ios',
 	'uses'   => 'TutorialController@ios'
 ]);
 
 
-Route::get('/php', [
+Route::get('/tutorials/php', [
 	'as'     => 'php',
 	'uses'   => 'TutorialController@php'
+]);
+
+Route::get('/tutorials/details', [
+	'as'     => 'tutorial-details',
+	'uses'   => 'TutorialController@tutorialDetails'
 ]);
 
 
@@ -71,7 +76,7 @@ Route::get('/contact', [
 	'uses'   => 'ContactController@index'
 ]);
 
-Route::get('/details', [
+Route::get('/portfolio/details', [
 	'as'     => 'portfolio-details',
 	'uses'   => 'PortfolioController@details'
 ]);
@@ -133,10 +138,6 @@ Route::get('/new-tutorial', [
 	'uses'   => 'AdminController@tutorialCreate'
 ]);
 
-Route::get('/tutorial-details', [
-	'as'     => 'tutorial-details',
-	'uses'   => 'TutorialController@tutorialDetails'
-]);
 
 Route::get('/edit-tutorial', [
 	'as'     => 'tutorial-edit',
