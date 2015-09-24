@@ -1122,16 +1122,46 @@ input, button, select, textarea {
     margin-right: 10px;
 }
 
+.diablo-img {
+    margin-right: 10px;
+    display: block;
+    float: left;
+    margin-top: 18px;
+    height: 66px;
+    width: 83px;
+    background: url(/images/hero-nav-portraits.jpg);      
+}
+
+.crusader-female {
+    background-position: -83px -330px;   
+}
+
+.wizard-female {
+    background-position: -83px -264px;   
+}
+
+.monk-female {
+    background-position: -83px -132px;   
+}
+
+.witch-doctor-male {
+    background-position: 0 -198px;   
+}
+
+.demon-hunter-female {
+    background-position: -83px -66px;   
+}
+
 .character-attributes dd {
     padding-left: 10px;
 }
 
 .orange {
-    color: #DB820C;
+    color: #FF8C00;
 }
 
 .yellow {
-    color: #DAD70E;
+    color: #FFB90F;
 }
 
 .blue {
@@ -1139,7 +1169,7 @@ input, button, select, textarea {
 }
 
 .green {
-    color: #0f0;
+    color: #8BA446;
 }
 
 /** Tutorials **/

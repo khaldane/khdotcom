@@ -27,6 +27,10 @@ class Gaming extends Eloquent  {
             ->get(); 
     }
     
+    public static function getStats() {
+         return DB::table('wowstats')->get(); 
+    }
+    
     public static function getEquipment() {
         return DB::table('equipment')->get();   
     }

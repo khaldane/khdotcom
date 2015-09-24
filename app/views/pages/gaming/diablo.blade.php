@@ -105,7 +105,7 @@
                             <div class="character-header col-sm-12">
                                 <div class="character-header">
                                     <div class="character-details black">
-                                        <img class="character-img" src="http://us.battle.net/static-render/us/{{{ $char->icon }}}" alt="Khaazix"/>
+                                        <div class="diablo-img {{{ $char->style }}}"> </div>
                                         <h3>{{{ $char->name }}} </h3>
                                         <p class="about">{{{ $char->level}}} {{{ $char->class }}}</p>
                                     </div>

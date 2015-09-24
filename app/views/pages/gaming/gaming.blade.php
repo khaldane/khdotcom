@@ -58,33 +58,39 @@
                             <h4>Stats</h4>
                             <dl>
                                 <dt>Health</dt>
-                                <dd>{{{ $stats->stats->health }}}</dd>
+                                <dd>{{{ $stats->health }}}</dd>
                                 <dt>Strength</dt>
-                                <dd>{{{ $stats->stats->str }}}</dd>
+                                <dd>{{{ $stats->strength}}}</dd>
                                 <dt>Haste</dt>
-                                <dd>{{{ $stats->stats->hasteRating }}}</dd>
+                                <dd>{{{ $stats->haste}}}</dd>
                                 <dt>Multistrike</dt>
-                                <dd>{{{ $stats->stats->multistrikeRating }}}</dd>
+                                <dd>{{{ $stats->multistrike}}}</dd>
                                 <dt>Mastery</dt>
-                                <dd>{{{ $stats->stats->masteryRating }}}</dd>
+                                <dd>{{{ $stats->mastery}}}</dd>
                                 <dt>Versatility</dt>
-                                <dd>{{{ $stats->stats->versatility }}}</dd>
+                                <dd>{{{ $stats->versatility}}}</dd>
                                 <dt>Critical Strike</dt>
-                                <dd>{{{ $stats->stats->critRating }}}</dd>
+                                <dd>{{{ $stats->criticalStrike }}}</dd>
                             </dl>
                         </div>
                         <div class="col-sm-4">
                             <h4>Honourable Kills</h4>
-                            <p>{{{ $stats->totalHonorableKills }}}</p>
+                            <p>{{{ $stats->itemLevel }}}</p>
                             <hr>
                              <h4>Arena</h4>
                                 <dl>
-                                    <dt>2v2</dt>
-                                    <dd>0</dd>
-                                    <dt>3v3</dt>
-                                    <dd>0</dd>
-                                    <dt>5v5</dt>
-                                    <dd>0</dd>
+                                    <div class="col-sm-4">
+                                        <dt>2v2</dt>
+                                        <dd>0</dd>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <dt>3v3</dt>
+                                        <dd>0</dd>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <dt>5v5</dt>
+                                        <dd>0</dd>
+                                    </div>
                                 </dl>
                             </div>
                         <div class="col-sm-12 gaming-break">
@@ -128,8 +134,8 @@
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                   aria-valuemin="0" aria-valuemax="100" style="width:66%">
-                                    40/ 60
                                   </div>
+                                    <span> 40/ 60</span>
                                 </div>
                             </dl>
                             <dl class="col-sm-6">
@@ -137,17 +143,16 @@
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                   aria-valuemin="0" aria-valuemax="100" style="width:47%">
-                                    16 / 34
                                   </div>
+                                    <span>16 / 34</span>
                                 </div>
                             </dl>
                             <dl class="col-sm-6">
                                 <dt>Quests</dt>
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                  aria-valuemin="0" aria-valuemax="100" style="width:25%">
-                                    64 / 254
-                                  </div>
+                                  aria-valuemin="0" aria-valuemax="100" style="width:25%"></div>
+                                    <span> 64 / 254</span>
                                 </div>
                             </dl>
                             <dl class="col-sm-6">
@@ -155,8 +160,8 @@
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                   aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                                    448 / 883
                                   </div>
+                                    <span> 448 / 883</span>
                                 </div>
                             </dl>
                             <dl class="col-sm-6">
@@ -164,8 +169,8 @@
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                   aria-valuemin="0" aria-valuemax="100" style="width:33%">
-                                    96 / 285 
                                   </div>
+                                    <span> 96 / 285 </span>
                                 </div>
                             </dl>
                             <dl class="col-sm-6">
@@ -173,8 +178,8 @@
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                   aria-valuemin="0" aria-valuemax="100" style="width:57%">
-                                    87 / 152 
                                   </div>
+                                    <span> 87 / 152 </span>
                                 </div>
                             </dl>
                             <dl class="col-sm-6">
@@ -182,8 +187,8 @@
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                   aria-valuemin="0" aria-valuemax="100" style="width:27%">
-                                    63 / 231 
                                   </div>
+                                    <span> 63 / 231 </span>
                                 </div>
                             </dl>
                             <dl class="col-sm-6">
@@ -191,8 +196,8 @@
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                   aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                                    33 / 81 
                                   </div>
+                                    <span> 33 / 81 </span>
                                 </div>
                             </dl>
                             <dl class="col-sm-6">
@@ -200,8 +205,8 @@
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                   aria-valuemin="0" aria-valuemax="100" style="width:18%">
-                                    14 / 77 
                                   </div>
+                                    <span> 14 / 77 </span>
                                 </div>
                             </dl>
                             <dl class="col-sm-6">
@@ -209,8 +214,8 @@
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                   aria-valuemin="0" aria-valuemax="100" style="width:33%">
-                                    40 / 121 
                                   </div>
+                                    <span> 40 / 121 </span>
                                 </div>
                             </dl>
                             <dl class="col-sm-6">
@@ -218,8 +223,8 @@
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                   aria-valuemin="0" aria-valuemax="100" style="width:33%">
-                                    34 / 103 
                                   </div>
+                                    <span> 34 / 103 </span>
                                 </div>
                             </dl>
                             <dl class="col-sm-6">
@@ -227,8 +232,8 @@
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                   aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                    137 / 228 
                                   </div>
+                                    <span> 137 / 228 </span>
                                 </div>
                             </dl>
                             <dl class="col-sm-6">
@@ -236,8 +241,8 @@
                                 <div class="progress">
                                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                   aria-valuemin="0" aria-valuemax="100" style="width:100%">
-                                    29
                                   </div>
+                                    <span>29</span>
                                 </div>
                             </dl>
                             <div class="col-sm-12">
@@ -250,8 +255,8 @@
                                     <div class="progress">
                                       <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                       aria-valuemin="0" aria-valuemax="100" style="width:42%">
-                                        230 / 544
                                       </div>
+                                        <span> 230 / 544 </span>
                                     </div>
                                 </dl>
                                 <dl class="col-sm-6">
@@ -259,8 +264,8 @@
                                     <div class="progress">
                                       <div class="progress-bar" role="progressbar" aria-valuenow="70"
                                       aria-valuemin="0" aria-valuemax="100" style="width:53%">
-                                        122 / 230
                                       </div>
+                                        <span> 122 / 230 </span>
                                     </div>
                                 </dl>
                             </div>
