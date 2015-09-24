@@ -4,10 +4,20 @@ use models\Admin;
 
 class UserController extends BaseController {
     
+    /**
+	  * Login
+      *
+	  * @return Response
+	  */   
 	public function index() {
 		return View::make('pages.admin.login');
 	}
     
+    /**
+	  * Logout
+      *
+	  * @return Response
+	  */
     public function logout() {
         if (Auth::user()) {
             Auth::logout();
@@ -15,6 +25,11 @@ class UserController extends BaseController {
 		return Redirect::to('/');
 	}
 
+    /**
+	  * Authenticate
+      *
+	  * @return Response
+	  */
     public function authenticate() {
        if((Auth::attempt(['email' => 'khaldane19@gmail.com', 'password' => $_POST['password']]))) {
             $portfolio = Admin::getPortfolio();
@@ -25,6 +40,11 @@ class UserController extends BaseController {
        }
     }
     
+    /**
+	  * Register
+      *
+	  * @return Response
+	  */
     public function register() {
         $user = new User();
         $user->email = 'khaldane19@gmail.com';

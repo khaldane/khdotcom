@@ -120,7 +120,7 @@ h4 {
 .redirect {
     font-weight: bold;
     font-family: Lato, 'Open Sans', helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
 header {
@@ -175,7 +175,7 @@ header a:hover {
 }
 
 .navbar-default .navbar-nav {
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -186,7 +186,7 @@ header a:hover {
 .nav-right {
     padding: 16px 15px;
     float:right;
-    font-size: 16px;
+    font-size: 1.0em;
 }
 
 .login a {
@@ -255,7 +255,7 @@ header a:hover {
 }
 
 .about {
-    font-size: 17px;
+    font-size: 1.1250em;
     font-family: Lato, 'Open Sans', helvetica, sans-serif;
     font-weight: 100;
 }
@@ -265,7 +265,7 @@ header a:hover {
     color: rgba(255,255,255,.5);
     font-weight: bold;
     font-family: Lato, 'Open Sans', helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 0.875em;
     padding-top: 5px;
 }
 
@@ -413,7 +413,7 @@ header a:hover {
 
 .facebook, .linkedin, .github , .email{
     color: #7e7e7e;
-    font-size: 30px;
+    font-size: 1.875em;
     -webkit-transition: color .5s ease-in-out;
     -moz-transition: color .5s ease-in-out;
     -o-transition: color .5s ease-in-out;
@@ -1006,7 +1006,7 @@ a.details-website {
      background-color: #50b3eb;
      border: none;
      padding: 12px 84px;
-     font-size: 18px;
+     font-size: 1.1250em;
      letter-spacing: 1px;
  }
 
@@ -1061,7 +1061,7 @@ input, button, select, textarea {
 .control-label {
     font-family: Lato, 'Open Sans', helvetica, sans-serif;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 1.1250em;
 }
 
 /** Gaming **/

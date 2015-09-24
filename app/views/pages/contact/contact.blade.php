@@ -1,7 +1,7 @@
 @extends('partials.default')
 
-@section('meta_title', 'khaldane - portfolio')
-@section('meta_description', 'my description')
+@section('meta_title', 'khaldane - contact')
+@section('meta_description', 'contact me')
 
 @section('content')
     <div id="contact-wrap">
@@ -9,22 +9,22 @@
             <div class="contact-info">
                 <h1 class="header-center">Contact</h1>
                 <hr class="hr-small">
-                <div class="contact-body">
+                <div class="contact-body about">
                     <h3>Mobile Phone</h3>
-                    <p class="about" >519-872-6992</p>
+                    <p class="about">519-872-6992</p>
                     <h3>Location</h3>
-                    <p class="about" >London, Ontario</p>
+                    <p class="about">London, Ontario</p>
                     <h3>Email</h3>
                     <p class="about">khaldane19@gmail.com</p>
                 </div>
             </div>
         </div>
-        <div class="content-right">
+        <div class="content-right about">
             <div class="about-website">
                 <div class="row">
                     <div class="contact-content col-lg-offset-1 col-lg-10">
                         <h1>About katherinehaldane.com</h1>
-                        <p class="about">My website is my playground! It is currently still under construction and I continue to work on it endlessly. There are many things to come such as an angular front-end and more tutorials. As much of a mobile and backend developer as I am; I am alway interested in learning new languages and techniques as well as keeping up with the always advancing technology.</p>
+                        <p class="about" >My website is my playground! It is currently still under construction and I continue to work on it endlessly. There are many things to come such as an angular front-end and more tutorials. As much of a mobile and backend developer as I am; I am alway interested in learning new languages and techniques as well as keeping up with the always advancing technology.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -57,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div id="world-map-markers"></div>
+            <div id="world-map-markers"/>
         </div>
     </div>
 @stop

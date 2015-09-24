@@ -1,8 +1,8 @@
 
 @extends('partials.default')
 
-@section('meta_title', 'khaldane -edit portfolio')
-@section('meta_description', 'my description')
+@section('meta_title', 'khaldane - edit portfolio')
+@section('meta_description', 'edit portfolio')
 
 @section('content')
     <div id="portfolio-wrap">

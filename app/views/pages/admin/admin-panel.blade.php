@@ -1,7 +1,7 @@
 @extends('partials.default')
 
 @section('meta_title', 'khaldane - admin')
-@section('meta_description', 'my description')
+@section('meta_description', 'admin panel')
 
 @section('content')
     <div id="portfolio-wrap">
@@ -17,13 +17,13 @@
              
              @foreach($portfolio as $p)
              <div class="admin-case-study">
-                <h4>{{{ $p->companyName }}}
+                <h4>{{ $p->companyName }}
                     <div class="action-header">
-                        <a href="/edit-portfolio?id={{{ $p->id }}}"><i class="fa fa-pencil"></i></a>
+                        <a href="/edit-portfolio?id={{ $p->id }}"><i class="fa fa-pencil"></i></a>
                         <a data-toggle="modal" data-target="#myModal"><i class="fa fa-trash-o"></i></a>
                     </div>
                  </h4>
-                 <p>{{{ $p->shortDescription }}} </p>
+                 <p>{{ $p->shortDescription }} </p>
              </div>
              @endforeach
              
@@ -34,9 +34,9 @@
             <hr  class="hr-large">
              <div class="admin-case-study">
                  @foreach($tutorials as $t)
-                     <h4>{{{ $t->title }}}
+                     <h4>{{ $t->title }}
                         <div class="action-header">
-                            <a href="/edit-tutorial?id={{{ $p->id }}}"><i class="fa fa-pencil"></i></a>
+                            <a href="/edit-tutorial?id={{ $p->id }}"><i class="fa fa-pencil"></i></a>
                             <a data-toggle="modal" data-target="#myModal"><i class="fa fa-trash-o"></i></a>
                         </div>
                      </h4>
