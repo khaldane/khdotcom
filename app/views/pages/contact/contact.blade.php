@@ -39,7 +39,6 @@
                          <div class="col-md-3">
                              <h4>Frameworks</h4>
                              <li><ul class="about featured-list">Laravel</ul></li>
-                             <li><ul class="about featured-list">Angular (Coming Soon!)</ul></li>
                              <li><ul class="about featured-list">Bootstrap</ul></li>
                         </div>
                          <div class="col-md-3">
