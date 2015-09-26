@@ -6,7 +6,7 @@
 <meta name="description" content="Simply web." />
 
 <title>khaldane</title>
-<link rel="shortcut icon" type="image/x-icon" href="/images/khLogoBrowser.png" />
+<link rel="icon" type="image/png" href="/images/favicon.png" />
 
 <!--- Bootstrap | FontAwesome | Style -->
 <link rel="stylesheet" href="{{ URL::asset('style/bootstrap/css/bootstrap.min.css') }}">
