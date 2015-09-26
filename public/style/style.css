@@ -1196,13 +1196,11 @@ input, button, select, textarea {
 
 .tutorial-tall {
     height: 600px;
-    width: 400px;
     margin-top: 20px;
 }
 
 .tutorial-short {
     height: 400px;
-    width: 800px;
     margin-top: 20px;
 }
 
