@@ -24,7 +24,7 @@
          e.preventDefault();
      },
     markers: [      
-      {latLng: [42.98252, -81.25397], name: 'London, ON'}
+      {latLng: [33.6839, -117.7947], name: 'Irvine, CA'}
     ]
   });
 });

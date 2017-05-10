@@ -11,9 +11,9 @@
                 <hr class="hr-small">
                 <div class="contact-body about">
                     <h3>Mobile Phone</h3>
-                    <p class="about">519-872-6992</p>
+                    <p class="about">949-299-9653</p>
                     <h3>Location</h3>
-                    <p class="about">London, Ontario</p>
+                    <p class="about">Irvine, California</p>
                     <h3>Email</h3>
                     <p class="about">khaldane19@gmail.com</p>
                 </div>
@@ -23,8 +23,9 @@
             <div class="about-website">
                 <div class="row">
                     <div class="contact-content col-lg-offset-1 col-lg-10">
-                        <h1>About katherinehaldane.com</h1>
-                        <p class="about" >My website is my playground! It is currently still under construction and I continue to work endlessly on it. There are many things to come such as an angular front-end and more tutorials. As much of a mobile and backend developer as I am; I am alway interested in learning new languages and techniques as well as keeping up with the always advancing technology.</p>
+                        <h1>About me!</h1>
+                        <p class="about" >I am gamer and an outdoor enthusiast. If you don't see me jeeping around, camping, sport climbing, or surprisingly not regretting that 6 hour+ motorcycle ride. I am probably hiding in my cave playing my hunter in WoW, or saving the world in Overwatch. Some of my other favorite past times are building new cosplays for the next big convention, playing D&D with awesome friends, or working on my next pet project.</p>
+                        <p class="about" >My website is my playground and currently still under construction. As much of a mobile and backend developer as I am; I am alway interested in learning new languages and techniques as well as keeping up with the latest technology trends.</p>
                     </div>
                 </div>
                 <div class="row">
