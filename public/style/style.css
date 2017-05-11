@@ -247,7 +247,8 @@ header a:hover {
 }
 
 .about-img {
-    height: 200px;
+    height: 230px;
+    width: 230px;
     border-radius: 50%;
     margin: -20px auto 40px;
     display: block;
@@ -926,6 +927,7 @@ a.details-website {
 
 .contact-info {
     color: #ffffff;   
+    padding: 0 40px;
 }
 
 .contact-body {
@@ -941,9 +943,18 @@ a.details-website {
 }
 
 .featured-list {
+    padding: 0;
+}
+
+.featured-list li {
     color: #333;   
-    padding-right: 10px;
-    padding-left: 0;
+    list-style: none;
+}
+
+.featured-list li:before {
+    content: '•';
+    color: #50b3eb;
+    padding-right: 5px;
 }
 
 .language-list {
@@ -1174,26 +1185,17 @@ input, button, select, textarea {
 
 /** Jvector Map **/
 
-@media screen and (min-width: 1920px) {
-    #world-map-markers {
-        width: 800px;
-        height: 400px; 
-        bottom: 0;
-        position: absolute;
-        margin-bottom: 20px;
-        left: 40%;
-        visibility: visible;
-    }
+#world-map-markers {
+    width: 800px;
+    height: 400px; 
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1400px) {
     #world-map-markers {
-        width: 800px;
-        height: 400px; 
-        bottom: 0;
-        position: absolute;
-        margin-bottom: 20px;
-        left: 40%;
-        visibility: hidden;
+        display: none;
     }
 }

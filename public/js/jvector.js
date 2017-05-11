@@ -1,6 +1,6 @@
  $(function(){
   $('#world-map-markers').vectorMap({
-    map: 'world_mill_en',
+    map: 'world_mill',
     zoomOnScroll: false,
     zoomButtons: false,
     scaleColors: ['#C8EEFF', '#0071A4'],

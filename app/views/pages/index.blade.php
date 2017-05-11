@@ -6,7 +6,7 @@
 @section('content')
     <div class="content-left">
         <div class="about-wrap about">
-            <img class="about-img" src="/images/me.jpg" alt="Katherine Haldane" />
+            <img class="about-img" src="/images/me.png" alt="Katherine Haldane" />
             <h2>Katherine Haldane</h2>
             <p class="about">
                 Welcome! I'm a Canadian living it up in California crafting mobile apps.

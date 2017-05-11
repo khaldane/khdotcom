@@ -25,34 +25,42 @@
                     <div class="contact-content col-lg-offset-1 col-lg-10">
                         <h1>About me!</h1>
                         <p class="about" >I am gamer and an outdoor enthusiast. If you don't see me jeeping around, camping, sport climbing, or surprisingly not regretting that 6 hour+ motorcycle ride. I am probably hiding in my cave playing my hunter in WoW, or saving the world in Overwatch. Some of my other favorite past times are building new cosplays for the next big convention, playing D&D with awesome friends, or working on my next pet project.</p>
-                        <p class="about" >My website is my playground and currently still under construction. As much of a mobile and backend developer as I am; I am alway interested in learning new languages and techniques as well as keeping up with the latest technology trends.</p>
+                        <p class="about" >My website is my playground and currently still under construction. As much of a mobile and backend developer as I am; I am always interested in learning new languages and techniques as well as keeping up with the latest technology trends.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="contact-stack col-lg-offset-1 col-lg-10">
                         <div class="col-md-3">
                             <h4>Languages</h4>
-                            <li><ul class="about featured-list">HTML5</ul></li>
-                            <li><ul class="about featured-list">CSS</ul></li>
-                            <li><ul class="about featured-list">JavaScript</ul></li>
-                            <li><ul class="about featured-list">PHP</ul></li>
+                            <ul class="about featured-list">
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                            </ul>
                         </div>
                          <div class="col-md-3">
                              <h4>Frameworks</h4>
-                             <li><ul class="about featured-list">Laravel</ul></li>
-                             <li><ul class="about featured-list">Bootstrap</ul></li>
+                             <ul class="about featured-list">
+                                 <li>Laravel</li>
+                                 <li>Bootstrap</li>
+                             </ul>
                         </div>
                          <div class="col-md-3">
                              <h4>Libraries</h4>
-                             <li><ul class="about featured-list">Font Awesome</ul></li>
-                             <li><ul class="about featured-list">JVectorMap</ul></li>
-                             <li><ul class="about featured-list">CKEditor</ul></li>
+                             <ul class="about featured-list">
+                                 <li>Font Awesome</li>
+                                 <li>JVectorMap</li>
+                                 <li>CKEditor</li>
+                             </ul>
                         </div>
                          <div class="col-md-3">
                              <h4>Services &amp; APIs</h4>
-                             <li><ul class="about featured-list">Digital Ocean</ul></li>
-                             <li><ul class="about featured-list">World of Warcraft</ul></li>
-                             <li><ul class="about featured-list">Diablo 3</ul></li>
+                             <ul class="about featured-list">
+                                 <li>Digital Ocean</li>
+                                 <li>World of Warcraft</li>
+                                 <li>Diablo 3</li>
+                             </ul>
                         </div>
                     </div>
                 </div>
