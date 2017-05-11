@@ -66,9 +66,9 @@
                                 @foreach(explode(',', $caseStudy->tools) as $tools)
                                     @if($countTools % 1 == 0)
                                         <div class="col-sm-4">
-                                            <ul>
+                                            <ul class="featured-list">
                                     @endif
-                                            <li> <div class="featured-list"> {{ $tools }} </div> </li>
+                                            <li> {{ $tools }} </li>
                                     @if($countTools % 1 == 0)
                                             </ul>
                                         </div>
@@ -100,13 +100,13 @@
                             <?php $countFeat = 1; ?>
                             @foreach(explode(',', $caseStudy->features) as $feature)
                                 @if($countFeat % 2 != 0)
-                                <ul class="row">
-                                @endif
-                                    <li class="col-sm-6">
-                                        <div class="featured-list"> {{ $feature }} </div>
-                                    </li>
-                                @if($countFeat % 2 == 0)
-                                </ul>
+                                <div class="row">
+                                    <ul class="featured-list">
+                                    @endif
+                                        <li class="col-sm-6"> {{ $feature }} </li>
+                                    @if($countFeat % 2 == 0)
+                                    </ul>
+                                </div>
                                 @endif
                             <?php $countFeat++; ?>
                             @endforeach
