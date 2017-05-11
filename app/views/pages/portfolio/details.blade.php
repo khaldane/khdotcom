@@ -84,6 +84,12 @@
                                 @include('partials.portfolio.connexMobile')
                             @elseif($caseStudy->tag == 'playon')
                                 @include('partials.portfolio.playonMobile')
+                            @elseif($caseStudy->tag == 'surfline')
+                                @include('partials.portfolio.surflineMobile')
+                            @elseif($caseStudy->tag == 'buoyweather')
+                                @include('partials.portfolio.buoyweatherMobile')
+                            @elseif($caseStudy->tag == 'fishtrack')
+                                @include('partials.portfolio.fishtrackMobile')
                             @endif
                         @else
                             <img class="details-seconday-img" src="/{{ $caseStudy->secondaryImg }}" />
